@@ -1,0 +1,132 @@
+/* CSS Document */
+
+/*Page Title for Template Pages*/
+
+h1.page-title{color: #fff;font-size: 36px;font-weight: 700;text-shadow: 0 0 7px #000;text-transform: uppercase;}
+.header-pos{background-position: center;background-size: cover;}
+
+/*===========================Home Page Css Starts=============================*/
+
+.showcase-mgn{margin-top:40px;min-height:195px;}
+.margn-custom{margin-top:6px;}
+.margn-custom img{margin-bottom:15px;}																																										
+
+/*===========================Home Page Css Ends=============================*/
+
+
+/*===========================Photoshoot Page Css Starts=============================*/
+
+.feature-img {float: left;width: 190px;}
+.showcase {float: left;margin-left: 10px;margin-top: 10px;}	
+.showcase img{display:block;margin-left:5px;}
+.product-container{margin-top:25px;clear:both;}
+.txt-product{margin-top:0px;margin-left:19px;float:left;}
+.txt-product h2{font-size:14px;color:#a1a1a1;text-transform:uppercase;margin-bottom:20px;}
+.txt-product a{color:#a1a1a1;font-size:15px;display:block;}
+.txt-product h3 a{text-transform:uppercase;font-size:14px;color:#a1a1a1;margin-top:38px;}
+.product-container h2.top-heading{color:#a1a1a1;font-size:18px;border-bottom:1px solid #CCCCCC;padding-bottom:11px;}
+
+/*===========================Photoshoot Page Css Ends=============================*/
+
+
+/*===========================User Style Guide Css Starts=============================*/
+
+.user-container{margin-top:40px;clear:both;}
+.wdt-percent{float:left;width:360px;margin-right:16px;margin-bottom:18px;}
+.mgn2{margin-right:0px !important;}
+
+
+/*===========================User Style Guide Css Ends=============================*/
+
+
+/*===========================Testing Reports Css Starts=============================*/
+
+.user-container .top-heading {border-bottom:1px solid #CCCCCC;padding-bottom:11px;}
+.user-container .top-heading h2{color:#a1a1a1;font-size:18px;float:left;margin-top:5px;}
+.wdt-percent h2{color:#a1a1a1;font-size:18px;border-bottom:1px solid #CCCCCC;padding-bottom:11px;}
+.wdt-percent ul li a{}
+.user-container select{padding:5px;font-size:12px;}
+.fltr{float:right;}
+
+/*===========================Research Css Starts=============================*/
+
+.research-page li h5, .research-page li p{
+	margin-left: 0;
+}
+
+.research-page ul li ul li{
+	list-style: disc;
+	margin-left: 30px;
+}
+
+.research-page ul li ul{
+	margin-top: 20px;
+}
+
+
+/*===========================Sidebar Css Starts=============================*/
+
+
+.htc-sidebar {
+	position: relative;
+}
+
+.htc-sidebar ul{
+	list-style: none;
+	margin-left: 0;
+}
+
+.htc-sidebar li{
+	position: relative;
+	display: block;
+}
+
+.htc-sidebar i.fa {
+	color: #000;
+	font-size: 120%;
+	margin: 0 5px;
+	width: 20px;
+	position: absolute;
+	left: -30px;
+	top: -2px;
+}
+
+
+
+/*===========================Custom Media Quries==================================*/
+
+@media(max-width: 1024px) {
+	
+.wdt-percent{width:300px;}
+
+}
+
+
+
+@media(max-width: 769px) {
+
+.wdt-percent{float:left;width:350px !important;margin-right:16px;margin-bottom:18px;}		
+	
+}
+
+@media(max-width: 480px) {
+
+.product-container{margin-top:25px;display:block;clear:both;}	
+.feature-img {float: none;text-align:center;display:block;margin:0 auto;}
+.showcase{margin:0 auto;float:none;display:block;text-align:center;}	
+.showcase img{display:inline-block;margin-right:2px;text-align:center;}			
+.txt-product{margin-top:0px;margin-left:0px;float:none;clear:both;text-align:center;}			
+.product-container h2.top-heading{color:#a1a1a1;font-size:18px;border-bottom:1px solid #CCCCCC;padding-bottom:11px;display:block;}
+.txt-product h3 a{margin-top:15px;}
+.txt-product h2{margin-bottom:12px;}
+.wdt-percent{float:none;margin-right:0px;margin-bottom:10px;width:auto !important;}
+.wdt-percent a img{display:block;text-align:center;width:100%;}
+
+
+}
+
+
+/*===========================Custom Media Quries==================================*/
+
+
+

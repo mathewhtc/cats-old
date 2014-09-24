@@ -1,0 +1,4562 @@
+@charset "UTF-8";
+/*
+Theme Name: NEUE
+Theme URI: http://envirra.com/themes/neue
+Author: envirra
+Author URI: http://envirra.com
+Description: Magazine WordPress Theme
+Version: 1.0
+License: GPL
+License URI: http://www.gnu.org/licenses/gpl.html‎
+Tags: black, white, one-column, two-columns, three-columns, right-sidebar, fluid-layout, custom-colors, custom-menu, featured-images, post-formats, theme-options, translation-ready, photoblogging
+Text Domain: envirra
+*/
+/* -----------------------------------------------------------------------------
+ * Bootstrap Block Grid
+ * https://gist.github.com/ChrisTM/8346916#file-block-grid-less
+ * -------------------------------------------------------------------------- */
+[class*="block-grid-"] {
+  display: block;
+  margin: -15px;
+  padding: 0; }
+
+[class*="block-grid-"]:before,
+[class*="block-grid-"]:after {
+  content: " ";
+  display: table; }
+
+[class*="block-grid-"]:after {
+  clear: both; }
+
+.block-grid-item {
+  display: inline;
+  margin: 0;
+  padding: 15px;
+  height: auto;
+  float: right;
+  list-style: none; }
+
+.block-grid-xs-1 > .block-grid-item {
+  width: 100%; }
+
+.block-grid-xs-1 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-1 > .block-grid-item:nth-of-type(1n+1) {
+  clear: both; }
+
+.block-grid-xs-2 > .block-grid-item {
+  width: 50%; }
+
+.block-grid-xs-2 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-2 > .block-grid-item:nth-of-type(2n+1) {
+  clear: both; }
+
+.block-grid-xs-3 > .block-grid-item {
+  width: 33.333333333333336%; }
+
+.block-grid-xs-3 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-3 > .block-grid-item:nth-of-type(3n+1) {
+  clear: both; }
+
+.block-grid-xs-4 > .block-grid-item {
+  width: 25%; }
+
+.block-grid-xs-4 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-4 > .block-grid-item:nth-of-type(4n+1) {
+  clear: both; }
+
+.block-grid-xs-5 > .block-grid-item {
+  width: 20%; }
+
+.block-grid-xs-5 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-5 > .block-grid-item:nth-of-type(5n+1) {
+  clear: both; }
+
+.block-grid-xs-6 > .block-grid-item {
+  width: 16.666666666666668%; }
+
+.block-grid-xs-6 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-6 > .block-grid-item:nth-of-type(6n+1) {
+  clear: both; }
+
+.block-grid-xs-7 > .block-grid-item {
+  width: 14.285714285714286%; }
+
+.block-grid-xs-7 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-7 > .block-grid-item:nth-of-type(7n+1) {
+  clear: both; }
+
+.block-grid-xs-8 > .block-grid-item {
+  width: 12.5%; }
+
+.block-grid-xs-8 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-8 > .block-grid-item:nth-of-type(8n+1) {
+  clear: both; }
+
+.block-grid-xs-9 > .block-grid-item {
+  width: 11.11111111111111%; }
+
+.block-grid-xs-9 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-9 > .block-grid-item:nth-of-type(9n+1) {
+  clear: both; }
+
+.block-grid-xs-10 > .block-grid-item {
+  width: 10%; }
+
+.block-grid-xs-10 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-10 > .block-grid-item:nth-of-type(10n+1) {
+  clear: both; }
+
+.block-grid-xs-11 > .block-grid-item {
+  width: 9.090909090909092%; }
+
+.block-grid-xs-11 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-11 > .block-grid-item:nth-of-type(11n+1) {
+  clear: both; }
+
+.block-grid-xs-12 > .block-grid-item {
+  width: 8.333333333333334%; }
+
+.block-grid-xs-12 > .block-grid-item:nth-of-type(n) {
+  clear: none; }
+
+.block-grid-xs-12 > .block-grid-item:nth-of-type(12n+1) {
+  clear: both; }
+
+@media (max-width: 479px) {
+  .block-grid-xxs-1 > .block-grid-item {
+    width: 100%; }
+
+  .block-grid-xxs-1 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-1 > .block-grid-item:nth-of-type(1n+1) {
+    clear: both; }
+
+  .block-grid-xxs-2 > .block-grid-item {
+    width: 50%; }
+
+  .block-grid-xxs-2 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-2 > .block-grid-item:nth-of-type(2n+1) {
+    clear: both; }
+
+  .block-grid-xxs-3 > .block-grid-item {
+    width: 33.333333333333336%; }
+
+  .block-grid-xxs-3 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-3 > .block-grid-item:nth-of-type(3n+1) {
+    clear: both; }
+
+  .block-grid-xxs-4 > .block-grid-item {
+    width: 25%; }
+
+  .block-grid-xxs-4 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-4 > .block-grid-item:nth-of-type(4n+1) {
+    clear: both; }
+
+  .block-grid-xxs-5 > .block-grid-item {
+    width: 20%; }
+
+  .block-grid-xxs-5 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-5 > .block-grid-item:nth-of-type(5n+1) {
+    clear: both; }
+
+  .block-grid-xxs-6 > .block-grid-item {
+    width: 16.666666666666668%; }
+
+  .block-grid-xxs-6 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-6 > .block-grid-item:nth-of-type(6n+1) {
+    clear: both; }
+
+  .block-grid-xxs-7 > .block-grid-item {
+    width: 14.285714285714286%; }
+
+  .block-grid-xxs-7 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-7 > .block-grid-item:nth-of-type(7n+1) {
+    clear: both; }
+
+  .block-grid-xxs-8 > .block-grid-item {
+    width: 12.5%; }
+
+  .block-grid-xxs-8 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-8 > .block-grid-item:nth-of-type(8n+1) {
+    clear: both; }
+
+  .block-grid-xxs-9 > .block-grid-item {
+    width: 11.11111111111111%; }
+
+  .block-grid-xxs-9 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-9 > .block-grid-item:nth-of-type(9n+1) {
+    clear: both; }
+
+  .block-grid-xxs-10 > .block-grid-item {
+    width: 10%; }
+
+  .block-grid-xxs-10 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-10 > .block-grid-item:nth-of-type(10n+1) {
+    clear: both; }
+
+  .block-grid-xxs-11 > .block-grid-item {
+    width: 9.090909090909092%; }
+
+  .block-grid-xxs-11 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-11 > .block-grid-item:nth-of-type(11n+1) {
+    clear: both; }
+
+  .block-grid-xxs-12 > .block-grid-item {
+    width: 8.333333333333334%; }
+
+  .block-grid-xxs-12 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-xxs-12 > .block-grid-item:nth-of-type(12n+1) {
+    clear: both; } }
+@media (min-width: 768px) {
+  .block-grid-sm-1 > .block-grid-item {
+    width: 100%; }
+
+  .block-grid-sm-1 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-1 > .block-grid-item:nth-of-type(1n+1) {
+    clear: both; }
+
+  .block-grid-sm-2 > .block-grid-item {
+    width: 50%; }
+
+  .block-grid-sm-2 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-2 > .block-grid-item:nth-of-type(2n+1) {
+    clear: both; }
+
+  .block-grid-sm-3 > .block-grid-item {
+    width: 33.333333333333336%; }
+
+  .block-grid-sm-3 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-3 > .block-grid-item:nth-of-type(3n+1) {
+    clear: both; }
+
+  .block-grid-sm-4 > .block-grid-item {
+    width: 25%; }
+
+  .block-grid-sm-4 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-4 > .block-grid-item:nth-of-type(4n+1) {
+    clear: both; }
+
+  .block-grid-sm-5 > .block-grid-item {
+    width: 20%; }
+
+  .block-grid-sm-5 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-5 > .block-grid-item:nth-of-type(5n+1) {
+    clear: both; }
+
+  .block-grid-sm-6 > .block-grid-item {
+    width: 16.666666666666668%; }
+
+  .block-grid-sm-6 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-6 > .block-grid-item:nth-of-type(6n+1) {
+    clear: both; }
+
+  .block-grid-sm-7 > .block-grid-item {
+    width: 14.285714285714286%; }
+
+  .block-grid-sm-7 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-7 > .block-grid-item:nth-of-type(7n+1) {
+    clear: both; }
+
+  .block-grid-sm-8 > .block-grid-item {
+    width: 12.5%; }
+
+  .block-grid-sm-8 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-8 > .block-grid-item:nth-of-type(8n+1) {
+    clear: both; }
+
+  .block-grid-sm-9 > .block-grid-item {
+    width: 11.11111111111111%; }
+
+  .block-grid-sm-9 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-9 > .block-grid-item:nth-of-type(9n+1) {
+    clear: both; }
+
+  .block-grid-sm-10 > .block-grid-item {
+    width: 10%; }
+
+  .block-grid-sm-10 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-10 > .block-grid-item:nth-of-type(10n+1) {
+    clear: both; }
+
+  .block-grid-sm-11 > .block-grid-item {
+    width: 9.090909090909092%; }
+
+  .block-grid-sm-11 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-11 > .block-grid-item:nth-of-type(11n+1) {
+    clear: both; }
+
+  .block-grid-sm-12 > .block-grid-item {
+    width: 8.333333333333334%; }
+
+  .block-grid-sm-12 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-sm-12 > .block-grid-item:nth-of-type(12n+1) {
+    clear: both; } }
+@media (min-width: 992px) {
+  .block-grid-md-1 > .block-grid-item {
+    width: 100%; }
+
+  .block-grid-md-1 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-1 > .block-grid-item:nth-of-type(1n+1) {
+    clear: both; }
+
+  .block-grid-md-2 > .block-grid-item {
+    width: 50%; }
+
+  .block-grid-md-2 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-2 > .block-grid-item:nth-of-type(2n+1) {
+    clear: both; }
+
+  .block-grid-md-3 > .block-grid-item {
+    width: 33.333333333333336%; }
+
+  .block-grid-md-3 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-3 > .block-grid-item:nth-of-type(3n+1) {
+    clear: both; }
+
+  .block-grid-md-4 > .block-grid-item {
+    width: 25%; }
+
+  .block-grid-md-4 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-4 > .block-grid-item:nth-of-type(4n+1) {
+    clear: both; }
+
+  .block-grid-md-5 > .block-grid-item {
+    width: 20%; }
+
+  .block-grid-md-5 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-5 > .block-grid-item:nth-of-type(5n+1) {
+    clear: both; }
+
+  .block-grid-md-6 > .block-grid-item {
+    width: 16.666666666666668%; }
+
+  .block-grid-md-6 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-6 > .block-grid-item:nth-of-type(6n+1) {
+    clear: both; }
+
+  .block-grid-md-7 > .block-grid-item {
+    width: 14.285714285714286%; }
+
+  .block-grid-md-7 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-7 > .block-grid-item:nth-of-type(7n+1) {
+    clear: both; }
+
+  .block-grid-md-8 > .block-grid-item {
+    width: 12.5%; }
+
+  .block-grid-md-8 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-8 > .block-grid-item:nth-of-type(8n+1) {
+    clear: both; }
+
+  .block-grid-md-9 > .block-grid-item {
+    width: 11.11111111111111%; }
+
+  .block-grid-md-9 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-9 > .block-grid-item:nth-of-type(9n+1) {
+    clear: both; }
+
+  .block-grid-md-10 > .block-grid-item {
+    width: 10%; }
+
+  .block-grid-md-10 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-10 > .block-grid-item:nth-of-type(10n+1) {
+    clear: both; }
+
+  .block-grid-md-11 > .block-grid-item {
+    width: 9.090909090909092%; }
+
+  .block-grid-md-11 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-11 > .block-grid-item:nth-of-type(11n+1) {
+    clear: both; }
+
+  .block-grid-md-12 > .block-grid-item {
+    width: 8.333333333333334%; }
+
+  .block-grid-md-12 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-md-12 > .block-grid-item:nth-of-type(12n+1) {
+    clear: both; } }
+@media (min-width: 1200px) {
+  .block-grid-lg-1 > .block-grid-item {
+    width: 100%; }
+
+  .block-grid-lg-1 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-1 > .block-grid-item:nth-of-type(1n+1) {
+    clear: both; }
+
+  .block-grid-lg-2 > .block-grid-item {
+    width: 50%; }
+
+  .block-grid-lg-2 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-2 > .block-grid-item:nth-of-type(2n+1) {
+    clear: both; }
+
+  .block-grid-lg-3 > .block-grid-item {
+    width: 33.333333333333336%; }
+
+  .block-grid-lg-3 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-3 > .block-grid-item:nth-of-type(3n+1) {
+    clear: both; }
+
+  .block-grid-lg-4 > .block-grid-item {
+    width: 25%; }
+
+  .block-grid-lg-4 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-4 > .block-grid-item:nth-of-type(4n+1) {
+    clear: both; }
+
+  .block-grid-lg-5 > .block-grid-item {
+    width: 20%; }
+
+  .block-grid-lg-5 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-5 > .block-grid-item:nth-of-type(5n+1) {
+    clear: both; }
+
+  .block-grid-lg-6 > .block-grid-item {
+    width: 16.666666666666668%; }
+
+  .block-grid-lg-6 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-6 > .block-grid-item:nth-of-type(6n+1) {
+    clear: both; }
+
+  .block-grid-lg-7 > .block-grid-item {
+    width: 14.285714285714286%; }
+
+  .block-grid-lg-7 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-7 > .block-grid-item:nth-of-type(7n+1) {
+    clear: both; }
+
+  .block-grid-lg-8 > .block-grid-item {
+    width: 12.5%; }
+
+  .block-grid-lg-8 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-8 > .block-grid-item:nth-of-type(8n+1) {
+    clear: both; }
+
+  .block-grid-lg-9 > .block-grid-item {
+    width: 11.11111111111111%; }
+
+  .block-grid-lg-9 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-9 > .block-grid-item:nth-of-type(9n+1) {
+    clear: both; }
+
+  .block-grid-lg-10 > .block-grid-item {
+    width: 10%; }
+
+  .block-grid-lg-10 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-10 > .block-grid-item:nth-of-type(10n+1) {
+    clear: both; }
+
+  .block-grid-lg-11 > .block-grid-item {
+    width: 9.090909090909092%; }
+
+  .block-grid-lg-11 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-11 > .block-grid-item:nth-of-type(11n+1) {
+    clear: both; }
+
+  .block-grid-lg-12 > .block-grid-item {
+    width: 8.333333333333334%; }
+
+  .block-grid-lg-12 > .block-grid-item:nth-of-type(n) {
+    clear: none; }
+
+  .block-grid-lg-12 > .block-grid-item:nth-of-type(12n+1) {
+    clear: both; } }
+/* -----------------------------------------------------------------------------
+ * Basic styles
+ * -------------------------------------------------------------------------- */
+::selection {
+  color: white; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none; }
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-style: inherit; }
+
+body {
+  line-height: 1.6em;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+p, a,
+.vw-post-navigation-title,
+.entry-title {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word; }
+
+textarea, input, select {
+  max-width: 100%; }
+
+textarea, input[type=text], input[type=password], input[type=search], select {
+  border: 1px solid #999;
+  padding: 6px 10px 7px 10px;
+  color: #999; }
+  textarea:focus, input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, select:focus {
+    color: inherit; }
+
+textarea, input[type=text], input[type=password], input[type=search], select,
+button, input[type=button], input[type=submit] {
+  border-radius: 0 !important; }
+
+.list-unstyled {
+  padding-right: 0;
+  list-style: none; }
+
+iframe {
+  max-width: 100%; }
+
+blockquote {
+  border-right: 2px solid #ddd;
+  margin-right: 2em;
+  padding: 0.2em 1.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #fafafa; }
+  blockquote cite {
+    font-style: italic;
+    display: block;
+    margin-top: 1.3em;
+    font-size: 0.75em; }
+
+/* -----------------------------------------------------------------------------
+ * General Styles
+ * -------------------------------------------------------------------------- */
+.clearright {
+  clear: left; }
+
+/* -----------------------------------------------------------------------------
+ * Type-Scale.com : 1.250 Major Third
+ * http://type-scale.com/?size=13&scale=1.250&text=Using%20-Webkit-Font-Smoothing&webfont=Bitter&font-family=%27Bitter%27,%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=#333
+ * -------------------------------------------------------------------------- */
+body {
+  line-height: 1.55; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.35; }
+  * + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+    margin-top: 1.414em; }
+
+h1 {
+  font-size: 2.441em; }
+
+h2 {
+  font-size: 1.953em; }
+
+h3 {
+  font-size: 1.563em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 1em; }
+
+small, .font_small {
+  font-size: 0.8em; }
+
+@media print {
+  /* Remove url after links from bootstrap */
+  a[href]:after {
+    content: none; } }
+.vw-404-text {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 0.5em;
+  color: #ccc; }
+
+.entry-title em, .widget-title em, .vw-related-posts-title em, .vw-post-comments-title em, .vw-page-title em, .vw-post-box-layout-title em, .vwspc-section-title em {
+  font-style: inherit; }
+
+.alignnone {
+  margin: 15px 0 0 15px; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 15px auto 15px auto; }
+
+.alignright {
+  float: left;
+  margin: 15px 15px 0 0; }
+
+.alignleft {
+  float: right;
+  margin: 15px 0 0 15px; }
+
+.aligncenter {
+  display: block;
+  margin: 15px auto 15px auto; }
+
+a img.alignright {
+  float: left;
+  margin: 15px 15px 0 0; }
+
+a img.alignnone {
+  margin: 15px 0 0 15px; }
+
+a img.alignleft {
+  float: right;
+  margin: 15px 0 0 15px; }
+
+a img.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.wp-caption {
+  background: #fff;
+  text-align: center;
+  max-width: 100%; }
+
+.wp-caption.alignnone {
+  margin: 15px 0 30px 15px; }
+
+.wp-caption.alignleft {
+  margin: 15px 0 30px 15px; }
+
+.wp-caption.alignright {
+  margin: 15px 15px 30px 0; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.7;
+  line-height: 17px;
+  margin: 1em 0 0 0;
+  padding: 0 10%; }
+
+.wp-post-image {
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 15px; }
+
+.sticky {
+  /* empty */ }
+
+.gallery-caption {
+  /* empty */ }
+
+.bypostauthor {
+  /* empty */ }
+
+/* -----------------------------------------------------------------------------
+ * Wordpress Tiled Gallery Default Style
+ * -------------------------------------------------------------------------- */
+.gallery img {
+  border: 1px solid #ddd !important;
+  padding: 3px; }
+.gallery .gallery-caption {
+  margin-top: 0.5em;
+  font-style: italic; }
+
+/* -----------------------------------------------------------------------------
+ * Site layout
+ * -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  body.vw-site-layout-boxed .vw-site-wrapper {
+    margin: 30px auto; }
+  body.vw-site-layout-boxed .vw-site-wrapper, body.vw-site-layout-boxed .container {
+    max-width: 750px; } }
+@media (min-width: 992px) {
+  body.vw-site-layout-boxed .vw-site-wrapper, body.vw-site-layout-boxed .container {
+    max-width: 1000px; } }
+@media (min-width: 1200px) {
+  body.vw-site-layout-boxed .vw-site-wrapper, body.vw-site-layout-boxed .container {
+    max-width: 1200px; } }
+
+.vw-site-title {
+  margin-bottom: 0; }
+
+.vw-site-tagline {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-top: 10px;
+  opacity: 0.7; }
+
+/* -----------------------------------------------------------------------------
+ * Top Bar / Bottom Bar
+ * -------------------------------------------------------------------------- */
+.vw-site-top-bar, .vw-site-bottom-bar {
+  font-size: 11px; }
+
+.vw-site-top-bar-left, .vw-site-bottom-bar-left {
+  float: right; }
+
+.vw-site-top-bar-right, .vw-site-bottom-bar-right {
+  text-align: left; }
+
+.vw-site-bottom-bar {
+  padding: 5px 0; }
+
+@media (max-width: 479px) {
+  .vw-site-bottom-bar-left {
+    float: none; }
+
+  .vw-site-bottom-bar-right {
+    text-align: right; } }
+@media (max-width: 767px) {
+  .vw-site-top-bar-left, .vw-site-top-bar-right {
+    text-align: center;
+    float: none; } }
+/* -----------------------------------------------------------------------------
+ * Breaking News
+ * -------------------------------------------------------------------------- */
+.vw-breaking-news-wrapper {
+  background-color: #f7f7f7; }
+  .vw-breaking-news-wrapper .vw-breaking-news-title, .vw-breaking-news-wrapper .vw-language-bar, .vw-breaking-news-wrapper li {
+    line-height: 40px; }
+  .vw-breaking-news-wrapper li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+  .vw-breaking-news-wrapper a {
+    color: #999; }
+  @media (max-width: 767px) {
+    .vw-breaking-news-wrapper .vw-language-bar {
+      float: none;
+      display: block; } }
+
+.vw-breaking-news-title {
+  display: inline-block;
+  float: right;
+  margin-left: 15px;
+  font-weight: bold; }
+
+.vw-breaking-news-list, .vw-breaking-news-title {
+  vertical-align: top; }
+
+.vw-breaking-news-list {
+  height: 1px;
+  margin: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0; }
+  .vw-breaking-news-list.loaded {
+    opacity: 1; }
+
+.vw-language-bar {
+  float: left; }
+
+/* -----------------------------------------------------------------------------
+ * Header
+ * -------------------------------------------------------------------------- */
+.vw-site-header-wrapper {
+  background-color: #fff; }
+
+.vw-site-header {
+  padding: 30px 0; }
+
+body.vw-logo-position-left .vw-site-header-inner {
+  display: table; }
+body.vw-logo-position-left .vw-site-logo-wrapper, body.vw-logo-position-left .vw-header-ads-wrapper {
+  display: table-cell; }
+body.vw-logo-position-left .vw-header-ads-wrapper {
+  text-align: left; }
+@media (max-width: 767px) {
+  body.vw-logo-position-left .vw-site-header-inner {
+    display: block; }
+  body.vw-logo-position-left .vw-site-logo-wrapper, body.vw-logo-position-left .vw-header-ads-wrapper {
+    display: block;
+    text-align: center; } }
+
+body.vw-logo-position-center .vw-site-logo-wrapper {
+  text-align: center;
+  display: block; }
+body.vw-logo-position-center .vw-header-ads-wrapper {
+  margin-top: 2em;
+  text-align: center; }
+
+.vw-site-logo-link {
+  display: inline-block; }
+  .vw-site-logo-link:hover {
+    text-decoration: none; }
+
+.vw-site-logo-2x {
+  display: none; }
+
+.vw-header-ads-wrapper {
+  vertical-align: middle; }
+  @media (max-width: 767px) {
+    .vw-header-ads-wrapper {
+      margin-top: 2em; } }
+
+/* -----------------------------------------------------------------------------
+ * Page
+ * -------------------------------------------------------------------------- */
+.vw-page-wrapper {
+  padding: 30px 0;
+  background-color: #fff; }
+
+.vw-page-title-wrapper {
+  position: relative;
+  background-color: #f7f7f7;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .vw-page-title-wrapper .vw-page-description {
+    color: #999; }
+    .vw-page-title-wrapper .vw-page-description > p:last-child {
+      margin-bottom: 0; }
+  .vw-page-title-wrapper .vw-post-meta * {
+    color: #fff; }
+  .vw-page-title-wrapper.vw-has-background .vw-page-title-box {
+    padding-top: 250px; }
+  .vw-page-title-wrapper.vw-has-background .vw-page-description {
+    opacity: 0.8; }
+  .vw-page-title-wrapper .vw-page-title-thumbnail {
+    margin-left: 1em; }
+    .vw-page-title-wrapper .vw-page-title-thumbnail + .vw-page-title-box-inner {
+      width: 50%;
+      float: right; }
+  .vw-page-title-wrapper .vw-page-title-image-captions {
+    margin-right: 15px;
+    position: absolute;
+    z-index: 100; }
+    .vw-page-title-wrapper .vw-page-title-image-captions .vw-featured-image-caption {
+      opacity: 0.8;
+      color: #fff;
+      background-color: rgba(127, 127, 127, 0.3);
+      margin-left: 80px; }
+  @media (max-width: 767px) {
+    .vw-page-title-wrapper .vw-page-title {
+      font-size: 1.9em;
+      line-height: 1.2em;
+      padding-left: 10%; }
+    .vw-page-title-wrapper .vw-category-thumbnail, .vw-page-title-wrapper .avatar {
+      max-width: 60px; }
+    .vw-page-title-wrapper .vw-page-title-thumbnail {
+      margin-left: 1em; }
+      .vw-page-title-wrapper .vw-page-title-thumbnail + .vw-page-title-box-inner {
+        width: auto;
+        float: none;
+        padding-right: 85px; } }
+
+.vw-page-title {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+@media (max-width: 991px) {
+  .vw-page-content + .vw-page-sidebar {
+    margin-top: 45px; } }
+
+body.page #comments {
+  margin-top: 45px; }
+body.page .vw-post-comments-title {
+  margin-top: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Breadcrumb
+ * -------------------------------------------------------------------------- */
+.vw-breadcrumb-wrapper a {
+  color: inherit; }
+.vw-breadcrumb-wrapper .vw-breadcrumb-item-last {
+  opacity: 0.75;
+  font-style: italic; }
+
+.vw-breadcrumb {
+  padding: 12px 0;
+  font-size: 0.85em; }
+
+.vw-breadcrumb-separator {
+  margin: 0 0.5em; }
+
+.vw-breadcrumb-title {
+  font-weight: bold;
+  margin-left: 1em; }
+
+/* -----------------------------------------------------------------------------
+ * Search Page
+ * -------------------------------------------------------------------------- */
+body.search .search-result-caption {
+  margin-bottom: 80px; }
+
+/* -----------------------------------------------------------------------------
+ * Comments
+ * -------------------------------------------------------------------------- */
+#commentform .form-allowed-tags {
+  display: none; }
+
+/* -----------------------------------------------------------------------------
+ * Footer
+ * -------------------------------------------------------------------------- */
+.vw-site-footer {
+  padding: 45px 0 30px 0; }
+  .vw-site-footer .widget-title:after {
+    opacity: 0.2; }
+  .vw-site-footer .vw-post-box-meta a {
+    color: inherit; }
+  .vw-site-footer .vw-widget-feedburner-container {
+    background-color: rgba(127, 127, 127, 0.1); }
+
+@media (max-width: 991px) {
+  .vw-footer-sidebar + .vw-footer-sidebar {
+    margin-top: 30px; } }
+.vw-site-bottom-bar a {
+  color: inherit; }
+.vw-site-bottom-bar .vw-copyright {
+  line-height: 30px; }
+
+/* -----------------------------------------------------------------------------
+ * Post
+ * -------------------------------------------------------------------------- */
+article + article {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e5e5; }
+
+.entry-title {
+  margin-bottom: 8px; }
+  .entry-title:first-child {
+    margin-top: 0; }
+
+.vw-post-categories + .entry-title {
+  margin-top: 10px; }
+
+.entry-content > :first-child {
+  margin-top: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Featured Image
+ * -------------------------------------------------------------------------- */
+.vw-featured-image-wrapper {
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+  display: block; }
+  .vw-featured-image-wrapper .wp-post-image {
+    margin: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .vw-featured-image-wrapper:hover .vw-featured-image-link .wp-post-image {
+    -webkit-transform: rotate(5deg) scale(1.2);
+    -moz-transform: rotate(5deg) scale(1.2);
+    -ms-transform: rotate(5deg) scale(1.2);
+    -o-transform: rotate(5deg) scale(1.2);
+    transform: rotate(5deg) scale(1.2);
+    opacity: 0.5; }
+  .vw-featured-image-wrapper:hover .vw-featured-image-overlay {
+    opacity: 1;
+    display: block;
+    visibility: visible; }
+  .vw-featured-image-wrapper:hover .vw-featured-image-button-wrapper {
+    top: 50%; }
+
+.vw-featured-image-link {
+  display: block;
+  background-color: #000; }
+
+.vw-featured-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  visibility: hidden; }
+
+.no-touch .vw-featured-image-overlay {
+  visibility: visible; }
+
+.vw-featured-image-button-wrapper {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: top 0.4s ease-out;
+  -moz-transition: top 0.4s ease-out;
+  transition: top 0.4s ease-out; }
+
+.vw-featured-image-button {
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 26px;
+  color: #fff; }
+  .vw-featured-image-button:hover {
+    text-decoration: none;
+    color: inherit; }
+  .vw-featured-image-button + .vw-featured-image-button {
+    margin-right: 15px; }
+
+.vw-featured-image-caption-wrapper {
+  font-size: 12px; }
+
+.vw-featured-image-caption {
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 3px 5px;
+  border-radius: 2px;
+  display: inline-block; }
+
+/* -----------------------------------------------------------------------------
+ * Single Post
+ * -------------------------------------------------------------------------- */
+body.single-post article.post {
+  margin: 0;
+  padding-bottom: 30px; }
+body.single-post article.post,
+body.single-post .vw-about-author-section,
+body.single-post .vw-related-posts,
+body.single-post .vw-post-footer-section-custom-1,
+body.single-post .vw-post-footer-section-custom-2,
+body.single-post #comments {
+  margin-bottom: 30px; }
+
+.vw-page-title-box {
+  padding: 14px 0; }
+  .vw-page-title-box .vw-page-title-thumbnail {
+    float: right;
+    margin-left: 20px; }
+  .vw-page-title-box .vw-label + .vw-page-title {
+    margin-top: 6px; }
+  .vw-page-title-box .vw-page-title {
+    margin: 6px 0;
+    text-transform: capitalize;
+    word-break: break-word;
+    padding-left: 25%; }
+  .vw-page-title-box .vw-page-description {
+    font-size: 0.9em;
+    display: inline-block;
+    /* make it floated when there is title thumbnail */ }
+    .vw-page-title-box .vw-page-description > p:first-child {
+      margin-top: 0; }
+  .vw-page-title-box .vw-post-meta {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 0.9em; }
+  .vw-page-title-box a, .vw-page-title-box .vw-post-meta-separator {
+    color: inherit; }
+
+.vw-post-meta {
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  line-height: 1.5em; }
+  .vw-post-meta .vw-post-views,
+  .vw-post-meta .vw-post-comment-number,
+  .vw-post-meta .vw-post-likes,
+  .vw-post-meta .vw-post-share {
+    font-size: 1.1em; }
+  @media (max-width: 479px) {
+    .vw-post-meta .vw-post-meta-left, .vw-post-meta .vw-post-meta-right {
+      float: none;
+      display: block; }
+    .vw-post-meta .vw-post-meta-right {
+      margin-top: 0.9em; } }
+
+.vw-post-meta-left {
+  float: right; }
+
+.vw-post-meta-right {
+  float: left; }
+  .vw-post-meta-right > * {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3px 5px;
+    border-radius: 2px;
+    display: inline-block;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out; }
+    .vw-post-meta-right > *:hover * {
+      color: #fff !important; }
+  .vw-post-meta-right a {
+    text-decoration: none; }
+
+.vw-post-meta *, .vw-post-box-meta * {
+  color: #999; }
+
+article .vw-post-meta-right > * {
+  background-color: rgba(0, 0, 0, 0.04); }
+
+.vw-post-comment-number i {
+  float: right; }
+
+.vw-post-views i,
+.vw-post-comment-number i,
+.vw-post-likes i,
+.vw-post-share i {
+  margin-left: 5px; }
+
+.vw-post-share > i {
+  font-size: 13px;
+  margin: 0 3px; }
+
+.vw-tag-links, .vw-page-links, .vw-post-shares {
+  font-size: 0.9em; }
+
+.vw-page-links {
+  margin-bottom: 0.5em;
+  font-weight: bold; }
+  .vw-page-links .vw-page-links-title {
+    margin-left: 0.5em; }
+  .vw-page-links > .vw-page-link {
+    color: #fff; }
+  .vw-page-links > .vw-page-link, .vw-page-links > a {
+    display: inline-block;
+    padding: 5px 10px; }
+  .vw-page-links a:hover {
+    text-decoration: none; }
+  .vw-page-links > a {
+    color: #000; }
+    .vw-page-links > a:hover {
+      background-color: #000;
+      color: #fff; }
+
+.vw-tag-links .vw-tag-links-title {
+  font-weight: bold; }
+.vw-tag-links a {
+  font-style: italic;
+  margin-right: 0.4em;
+  margin-left: 2px; }
+
+/* -----------------------------------------------------------------------------
+ * Gallery Direction Nav
+ * -------------------------------------------------------------------------- */
+.vw-gallery-direction-nav {
+  direction: ltr;
+  position: absolute;
+  left: 15px;
+  top: 0; }
+
+.vw-gallery-direction-button {
+  background-color: rgba(127, 127, 127, 0.2);
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+  .vw-gallery-direction-button i {
+    color: #fff;
+    font-size: 19px; }
+
+/* -----------------------------------------------------------------------------
+ * Embeded Media
+ * -------------------------------------------------------------------------- */
+body.single .vw-embeded-media, body.single .vw-featured-image {
+  margin-bottom: 1.95em; }
+
+/* -----------------------------------------------------------------------------
+ * Post Navigation
+ * -------------------------------------------------------------------------- */
+.vw-post-navigation {
+  margin-bottom: 35px;
+  display: table;
+  padding: 0;
+  width: 100%;
+  position: relative; }
+
+.vw-post-navigation-inner {
+  display: table-row; }
+
+.vw-post-navigation-icon {
+  font-size: 30px;
+  line-height: 1em;
+  width: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px; }
+
+.vw-post-navigation-content {
+  display: block; }
+
+.vw-post-navigation-title {
+  margin-top: 0; }
+
+.vw-post-navigation-label {
+  display: block;
+  font-size: 0.75em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.vw-post-navigation-next,
+.vw-post-navigation-previous {
+  display: table-cell;
+  position: relative;
+  padding: 20px 0;
+  vertical-align: middle;
+  width: 50%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .vw-post-navigation-next:hover,
+  .vw-post-navigation-previous:hover {
+    background-color: #f5f5f5;
+    text-decoration: none; }
+  @media (max-width: 767px) {
+    .vw-post-navigation-next,
+    .vw-post-navigation-previous {
+      display: block;
+      width: 100%;
+      margin: 0;
+      border: none; } }
+
+.vw-post-navigation-next {
+  text-align: left;
+  border-right: 1px dashed #ddd; }
+  .vw-post-navigation-next .vw-post-navigation-content {
+    margin-left: 60px;
+    margin-right: 2em; }
+  .vw-post-navigation-next .vw-post-navigation-icon {
+    left: 0; }
+
+.vw-post-navigation-previous .vw-post-navigation-content {
+  margin-right: 60px;
+  margin-left: 2em; }
+
+/* -----------------------------------------------------------------------------
+ * After Posts Sections
+ * -------------------------------------------------------------------------- */
+.vw-related-posts-title,
+.vw-post-comments-title {
+  padding-bottom: 10px; }
+
+/* -----------------------------------------------------------------------------
+ * Related Posts
+ * -------------------------------------------------------------------------- */
+.vw-related-posts .vw-post-box-layout-boxed .block-grid {
+  padding: 7.5px; }
+.vw-related-posts .vw-post-box-layout-boxed .block-grid-item {
+  padding: 7.5px; }
+
+/* -----------------------------------------------------------------------------
+ * Comments
+ * -------------------------------------------------------------------------- */
+#comments .comment-reply-title {
+  font-size: 1.3em; }
+
+.commentlist, .commentlist .children {
+  list-style: none; }
+
+.commentlist {
+  padding-right: 0; }
+
+.comment .avatar {
+  border-radius: 50%;
+  width: 50px;
+  float: right;
+  margin-left: 15px; }
+.comment .author, .comment .text {
+  margin-right: 80px; }
+
+.comment .date, .pingback .date {
+  font-size: 10px;
+  color: #999; }
+.comment .author-name, .pingback .author-name {
+  margin-top: 0.2em;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 1.1em; }
+.comment .text, .pingback .text {
+  margin-top: 30px; }
+
+* + .comment, * + .pingback, .commentlist .children {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ddd; }
+
+.commentlist .children {
+  margin-right: 80px;
+  padding-right: 0; }
+  .commentlist .children .comment .avatar {
+    width: 32px; }
+  .commentlist .children .comment .author, .commentlist .children .comment .text {
+    margin-right: 50px; }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: Full-Width Thumbnail
+ * -------------------------------------------------------------------------- */
+body.vw-page-has-thumbnail .vw-page-title-wrapper .vw-page-title, body.vw-page-has-thumbnail .vw-page-title-wrapper .vw-post-meta,
+body.vw-post-layout-full-width-featured-image .vw-page-title-wrapper .vw-page-title,
+body.vw-post-layout-full-width-featured-image .vw-page-title-wrapper .vw-post-meta {
+  color: #fff; }
+
+/* -----------------------------------------------------------------------------
+ * Page Navigation
+ * -------------------------------------------------------------------------- */
+.vw-page-navigation-title {
+  margin-left: 0.5em;
+  display: none; }
+
+.vw-page-navigation-pagination {
+  display: block;
+  padding-top: 1em;
+  margin-top: 3em;
+  border-top: 1px solid #D2D2D2;
+  text-align: right; }
+  .vw-page-navigation-pagination .page-numbers {
+    display: inline-block;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold; }
+    .vw-page-navigation-pagination .page-numbers.current, .vw-page-navigation-pagination .page-numbers:hover {
+      color: white; }
+
+/* -----------------------------------------------------------------------------
+ * Initial Style for All Menu
+ * -------------------------------------------------------------------------- */
+.vw-menu {
+  margin: 0;
+  padding: 0; }
+  .vw-menu li {
+    list-style: none; }
+  .vw-menu a {
+    text-decoration: none; }
+  .no-touch .vw-menu .main-menu-item, .no-touch .vw-menu .menu-link, .no-touch .vw-menu .sub-menu-item {
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out; }
+  .vw-menu .menu-item-depth-0 {
+    display: inline-block; }
+  .vw-menu .menu-link {
+    display: block;
+    padding: 10px 15px 10px 10px; }
+  .vw-menu .sub-menu {
+    padding: 0;
+    width: 250px;
+    position: relative; }
+  .vw-menu .sub-menu-wrapper {
+    -webkit-backface-visibility: hidden; }
+
+/* -----------------------------------------------------------------------------
+ * Text Menu Style
+ * -------------------------------------------------------------------------- */
+.vw-menu-type-text .sub-menu.menu-depth-2 {
+  right: 100%;
+  top: 0; }
+.vw-menu-type-text .sub-menu {
+  position: absolute;
+  display: none;
+  background-color: #ddd;
+  z-index: 1; }
+.vw-menu-type-text .menu-item {
+  position: relative; }
+
+/* -----------------------------------------------------------------------------
+ * Vertical Text Menu Style
+ * -------------------------------------------------------------------------- */
+.vw-menu-type-vertical-text .menu-item-depth-0 {
+  display: block; }
+
+/* -----------------------------------------------------------------------------
+ * Mega Post Menu Style
+ * -------------------------------------------------------------------------- */
+.vw-menu-type-mega-post {
+  position: relative; }
+  .vw-menu-type-mega-post .sub-menu-wrapper {
+    display: none;
+    position: absolute;
+    padding: 0;
+    z-index: 999; }
+  .vw-menu-type-mega-post .sub-posts {
+    padding: 15px 0; }
+  .vw-menu-type-mega-post .menu-item-depth-1 .sub-menu-wrapper {
+    right: 100%;
+    top: 0; }
+  .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-category {
+    position: static; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-category > .sub-menu-wrapper {
+      right: 0;
+      left: 0;
+      overflow: hidden; }
+      .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-category > .sub-menu-wrapper > .sub-menu {
+        width: 25%;
+        min-width: 0;
+        float: right;
+        /* fully height */
+        padding-bottom: 500px;
+        margin-bottom: -500px; }
+        .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-category > .sub-menu-wrapper > .sub-menu + .sub-posts {
+          width: 75%;
+          float: right; }
+      @media (max-width: 991px) {
+        .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-category > .sub-menu-wrapper .vw-post-box-layout-medium-grid-3-col
+        .block-grid-item:last-child {
+          display: none; } }
+  .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols {
+    position: static; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols > .sub-menu-wrapper {
+      right: 0;
+      left: 0;
+      overflow: hidden; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1 {
+      width: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+      display: block; }
+      .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1:before, .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1:after {
+        content: " ";
+        display: table; }
+      .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1:after {
+        clear: both; }
+      .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1 > li {
+        width: 25%;
+        padding: 10px;
+        display: block;
+        float: right;
+        vertical-align: top; }
+      .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-1 .sub-menu-wrapper {
+        display: block;
+        position: static; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .sub-menu.menu-depth-2 {
+      display: block;
+      width: auto; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .menu-item-depth-1:hover {
+      background: transparent; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .menu-item-depth-1 > .menu-link {
+      font-weight: bold;
+      border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+      margin-bottom: 5px;
+      padding: 10px 5px; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .menu-item-depth-2 .menu-link {
+      padding-right: 25px; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .menu-item-depth-2 .menu-link:before {
+      content: "\e875";
+      font-family: "entypo";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-left: .2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      margin-right: .2em;
+      opacity: 0.4;
+      margin-right: -18px;
+      margin-left: 6px; }
+    .vw-menu-type-mega-post .menu-item-depth-0.vw-mega-menu-type-links-4-cols .menu-item-depth-2 + .menu-item-depth-2 .menu-link {
+      border-top: 1px solid rgba(127, 127, 127, 0.2); }
+
+/* -----------------------------------------------------------------------------
+ * Top Navigation
+ * -------------------------------------------------------------------------- */
+.vw-menu-top-wrapper .menu-item-depth-0 > .menu-link,
+.vw-menu-bottom-wrapper .menu-item-depth-0 > .menu-link {
+  padding: 0px 10px;
+  line-height: 30px; }
+.vw-menu-top-wrapper .menu-item-depth-0:hover .main-menu-link,
+.vw-menu-bottom-wrapper .menu-item-depth-0:hover .main-menu-link {
+  color: #fff; }
+
+/* -----------------------------------------------------------------------------
+ * Bottom Navigation
+ * -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Main Navigation
+ * -------------------------------------------------------------------------- */
+.vw-menu-main-wrapper {
+  position: relative; }
+  .vw-menu-main-wrapper:before {
+    display: block;
+    background-color: #eee;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    -webkit-transition: opacity 0.2s east-out;
+    -moz-transition: opacity 0.2s east-out;
+    transition: opacity 0.2s east-out; }
+  @media (max-width: 767px) {
+    .vw-menu-main-wrapper {
+      display: none; } }
+
+.vw-menu-location-main {
+  padding-right: 10px;
+  padding-left: 10px; }
+  .vw-menu-location-main .main-menu-link span {
+    color: inherit; }
+  .vw-menu-location-main .menu-item-depth-0:hover .main-menu-link {
+    color: #fff; }
+  .vw-menu-location-main .menu-item-depth-0.current-menu-item:after,
+  .vw-menu-location-main .menu-item-depth-0.current-menu-parent:after,
+  .vw-menu-location-main .menu-item-depth-0.current-category-ancestor:after,
+  .vw-menu-location-main .menu-item-depth-0.current-post-ancestor:after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: -2px;
+    position: relative;
+    bottom: 0;
+    content: ''; }
+  .vw-menu-location-main .vw-menu-additional-logo {
+    display: inline-block;
+    float: right;
+    position: relative;
+    opacity: 0;
+    width: 0;
+    overflow: hidden; }
+    .vw-menu-location-main .vw-menu-additional-logo img {
+      max-height: 36px; }
+    .is-sticky .vw-menu-location-main .vw-menu-additional-logo {
+      opacity: 1;
+      width: auto; }
+      .is-sticky .vw-menu-location-main .vw-menu-additional-logo img {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s; }
+  .vw-menu-location-main .vw-menu-additional-icons {
+    display: inline-block;
+    float: left;
+    position: relative; }
+  .vw-menu-location-main .vw-instant-search-panel {
+    width: 25em;
+    left: 0;
+    top: 100%; }
+  .vw-menu-location-main .sub-menu-link {
+    font-size: 0.9em; }
+
+.is-sticky .vw-menu-main-wrapper {
+  margin-top: 0; }
+  .is-sticky .vw-menu-main-wrapper:before {
+    opacity: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Mobile Navigation
+ * -------------------------------------------------------------------------- */
+.vw-mobile-menu-button,
+.vw-instant-search-buton,
+.vw-user-login-button,
+.vw-cart-button,
+.vw-menu-main-wrapper .menu-item-depth-0 > .menu-link {
+  display: inline-block;
+  padding: 12px 15px;
+  cursor: pointer;
+  height: 45px; }
+  .vw-mobile-menu-button:hover,
+  .vw-instant-search-buton:hover,
+  .vw-user-login-button:hover,
+  .vw-cart-button:hover,
+  .vw-menu-main-wrapper .menu-item-depth-0 > .menu-link:hover {
+    color: #fff; }
+
+.vw-menu-mobile-wrapper .vw-instant-search-buton,
+.vw-menu-mobile-wrapper .vw-user-login-button,
+.vw-menu-mobile-wrapper .vw-cart-button-wrapper,
+.vw-menu-main-wrapper .vw-instant-search-buton,
+.vw-menu-main-wrapper .vw-user-login-button,
+.vw-menu-main-wrapper .vw-cart-button-wrapper {
+  float: left; }
+.vw-menu-mobile-wrapper .vw-mobile-menu-button,
+.vw-menu-main-wrapper .vw-mobile-menu-button {
+  font-size: 14px; }
+
+.vw-menu-mobile-wrapper .vw-menu-mobile-inner {
+  position: relative; }
+.vw-menu-mobile-wrapper .vw-instant-search-panel {
+  width: 100%; }
+@media (min-width: 768px) {
+  .vw-menu-mobile-wrapper {
+    display: none; } }
+
+.vw-menu-location-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+  .vw-menu-location-mobile .menu-item-depth-0 {
+    position: relative;
+    padding: 0.5em 0; }
+    .vw-menu-location-mobile .menu-item-depth-0:before {
+      border-top: 1px solid rgba(128, 128, 128, 0.3);
+      position: relative;
+      display: block;
+      content: '';
+      margin: 0 1em;
+      top: -0.5em; }
+    .vw-menu-location-mobile .menu-item-depth-0:first-child:before {
+      border-top: none; }
+    .vw-menu-location-mobile .menu-item-depth-0:hover .main-menu-link {
+      color: #fff; }
+  .vw-menu-location-mobile .main-menu-link {
+    padding-right: 1em; }
+  .vw-menu-location-mobile .sub-menu {
+    padding-right: 2em;
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 0.5em; }
+
+/*-----------------------------------------------------------------------------
+* Post Box: Common
+* -------------------------------------------------------------------------- */
+.vw-post-box + .vw-post-box {
+  margin-top: 15px; }
+
+.vw-post-box-meta {
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #999; }
+
+.vw-post-meta-small, .vw-post-box-meta {
+  margin-bottom: 0; }
+  .vw-post-meta-small .vw-post-meta-left, .vw-post-box-meta .vw-post-meta-left {
+    padding: 3px 0 3px 5px; }
+
+.vw-post-review-star {
+  display: inline-block;
+  line-height: 1em;
+  width: auto !important; }
+  .vw-post-review-star img {
+    max-width: 14px;
+    vertical-align: middle;
+    margin-top: -3px; }
+  .vw-post-review-star img + img {
+    margin-right: 3px; }
+
+.vw-post-box-thumbnail {
+  display: inline-block;
+  max-width: 100%; }
+  .vw-post-box-thumbnail img.wp-post-image {
+    margin: 0;
+    height: auto;
+    -webkit-backface-visibility: hidden; }
+
+/* A default style for top-thumbnail post box */
+.vw-post-box-style-top-thumbnail .vw-post-box-post-title {
+  margin-top: 0.2em;
+  margin-bottom: 0.8em; }
+.vw-post-box-style-top-thumbnail .vw-post-box-thumbnail {
+  margin-bottom: 5px; }
+
+/* A default style for left-thumbnail post box */
+.vw-post-box-style-left-thumbnail {
+  clear: both; }
+  .vw-post-box-style-left-thumbnail .vw-post-box-thumbnail {
+    float: right;
+    width: 60px;
+    height: 60px; }
+    .vw-post-box-style-left-thumbnail .vw-post-box-thumbnail ~ * {
+      margin-right: 75px; }
+  .vw-post-box-style-left-thumbnail .vw-post-box-post-title {
+    margin-top: 0;
+    margin-bottom: 0.2em; }
+
+.vw-post-box-article .vw-post-box-thumbnail,
+.vw-post-box-large .vw-post-box-thumbnail,
+.vw-post-box-medium .vw-post-box-thumbnail,
+.vw-post-box-small .vw-post-box-thumbnail,
+.vw-post-box-classic .vw-post-box-thumbnail,
+.vw-instant-search-result-thumbnail {
+  background: #111111 url("images/plus.png") center no-repeat; }
+  .vw-post-box-article .vw-post-box-thumbnail img.wp-post-image,
+  .vw-post-box-large .vw-post-box-thumbnail img.wp-post-image,
+  .vw-post-box-medium .vw-post-box-thumbnail img.wp-post-image,
+  .vw-post-box-small .vw-post-box-thumbnail img.wp-post-image,
+  .vw-post-box-classic .vw-post-box-thumbnail img.wp-post-image,
+  .vw-instant-search-result-thumbnail img.wp-post-image {
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out; }
+  .vw-post-box-article .vw-post-box-thumbnail:hover img.wp-post-image,
+  .vw-post-box-large .vw-post-box-thumbnail:hover img.wp-post-image,
+  .vw-post-box-medium .vw-post-box-thumbnail:hover img.wp-post-image,
+  .vw-post-box-small .vw-post-box-thumbnail:hover img.wp-post-image,
+  .vw-post-box-classic .vw-post-box-thumbnail:hover img.wp-post-image,
+  .vw-instant-search-result-thumbnail:hover img.wp-post-image {
+    opacity: 0.3; }
+
+.vw-post-date i {
+  margin-left: 0.3em; }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Small
+ * -------------------------------------------------------------------------- */
+.vw-post-box-small .vw-post-box-meta .vw-post-views {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  display: inline-block; }
+.vw-post-box-small .vw-post-box-meta .vw-post-views-icon {
+  margin-left: 3px; }
+.vw-post-box-small .vw-post-box-meta .vw-post-review-star {
+  display: inline-block; }
+  .vw-post-box-small .vw-post-box-meta .vw-post-review-star img {
+    max-width: 12px;
+    margin-top: 1px;
+    vertical-align: bottom; }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Small Author
+ * -------------------------------------------------------------------------- */
+.vw-post-box-small-author .vw-post-box-meta {
+  margin-top: 5px; }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Small Comment
+ * -------------------------------------------------------------------------- */
+.vw-post-box-small-comment p {
+  font-size: 0.85em; }
+.vw-post-box-small-comment .vw-post-box-thumbnail {
+  background: transparent; }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Large
+ * -------------------------------------------------------------------------- */
+.vw-post-box-large .vw-post-box-post-title {
+  font-size: 1.25em;
+  /* h4 */ }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Boxed
+ * -------------------------------------------------------------------------- */
+.vw-post-box-boxed {
+  position: relative;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  height: 180px; }
+  .vw-post-box-boxed .vw-post-box-thumbnail {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-out;
+    -moz-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out; }
+    .vw-post-box-boxed .vw-post-box-thumbnail.imgLiquid_ready {
+      opacity: 1; }
+  .vw-post-box-boxed:hover .vw-post-box-thumbnail {
+    opacity: 0.5; }
+  .vw-post-box-boxed .vw-post-box-overlay {
+    position: absolute;
+    padding: 10px 15px 20px 15px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    background: -webkit-linear-gradient( top , transparent 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 100%); }
+  .vw-post-box-boxed .vw-post-box-post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff; }
+    .vw-post-box-boxed .vw-post-box-post-title a:hover {
+      color: inherit; }
+  .vw-post-box-boxed .vw-post-review-star {
+    display: block;
+    line-height: 16px;
+    margin-top: 5px; }
+
+/* -----------------------------------------------------------------------------
+ * Post Box: Classic
+ * -------------------------------------------------------------------------- */
+.vw-post-box-classic .vw-post-box-thumbnail {
+  float: right;
+  width: 230px;
+  height: 230px; }
+  .vw-post-box-classic .vw-post-box-thumbnail ~ * {
+    margin-right: 260px; }
+@media (max-width: 479px) {
+  .vw-post-box-classic .vw-post-box-thumbnail {
+    display: block;
+    float: none;
+    margin-bottom: 15px; }
+    .vw-post-box-classic .vw-post-box-thumbnail ~ * {
+      margin-right: 0 !important; } }
+@media (max-width: 767px) {
+  .vw-post-box-classic .vw-post-box-thumbnail {
+    width: 180px;
+    height: 180px; }
+    .vw-post-box-classic .vw-post-box-thumbnail ~ * {
+      margin-right: 210px; } }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: Common
+ * -------------------------------------------------------------------------- */
+.vw-post-box-layout-title {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.563em; }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: 3 Columns Grid ( Medium, Large )
+ * -------------------------------------------------------------------------- */
+.vw-post-box-layout-medium-grid-3-col,
+.vw-post-box-layout-large-grid-3-col {
+  /* Only XS to SM */ }
+  @media (min-width: 480px) and (max-width: 991px) {
+    .vw-post-box-layout-medium-grid-3-col .block-grid-item:nth-child(odd):last-child,
+    .vw-post-box-layout-large-grid-3-col .block-grid-item:nth-child(odd):last-child {
+      display: none; } }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: Large Grid
+ * -------------------------------------------------------------------------- */
+.vw-post-box-layout-large-grid .vw-post-meta,
+.vw-post-box-layout-large-grid-1-col .vw-post-meta,
+.vw-post-box-layout-large-grid-3-col .vw-post-meta {
+  margin-bottom: 0; }
+.vw-post-box-layout-large-grid .avatar, .vw-post-box-layout-large-grid .author-name, .vw-post-box-layout-large-grid .vw-post-meta-separator,
+.vw-post-box-layout-large-grid-1-col .avatar,
+.vw-post-box-layout-large-grid-1-col .author-name,
+.vw-post-box-layout-large-grid-1-col .vw-post-meta-separator,
+.vw-post-box-layout-large-grid-3-col .avatar,
+.vw-post-box-layout-large-grid-3-col .author-name,
+.vw-post-box-layout-large-grid-3-col .vw-post-meta-separator {
+  display: none; }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: Large-Small
+ * -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .vw-post-box-layout-large-small .block-grid,
+  .vw-post-box-layout-large-small-3-col .block-grid {
+    margin-top: 15px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .vw-post-box-layout-large-small .block-grid-item:first-child .vw-post-box-small,
+  .vw-post-box-layout-large-small-3-col .block-grid-item:first-child .vw-post-box-small {
+    border-top: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .vw-post-box-layout-large-small-3-col .block-grid {
+    margin-top: 15px; }
+  .vw-post-box-layout-large-small-3-col .block-grid-item:nth-child(2) .vw-post-box {
+    border-top: none; }
+  .vw-post-box-layout-large-small-3-col .block-grid-item:nth-child(odd):last-child {
+    display: none; } }
+
+@media (min-width: 992px) {
+  .vw-post-box-layout-large-small .block-grid-item:nth-child(1) .vw-post-box-small,
+  .vw-post-box-layout-large-small-3-col .block-grid-item:nth-child(1) .vw-post-box-small,
+  .vw-post-box-layout-large-small-3-col .block-grid-item:nth-child(2) .vw-post-box-small {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0; } }
+.vw-post-box-layout-large-small-1-col .block-grid {
+  margin-top: 15px; }
+
+.vw-post-box-layout-large-small .vw-post-box-small,
+.vw-post-box-layout-large-small-1-col .vw-post-box-small,
+.vw-post-box-layout-large-small-3-col .vw-post-box-small {
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  margin-top: -15px; }
+
+/* -----------------------------------------------------------------------------
+ * Post Layout: Grid 3 Cols
+ * -------------------------------------------------------------------------- */
+.vw-box-3-wrapper + .vw-box-3-wrapper {
+  padding-top: 10px; }
+
+.vw-box-3 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.vw-box-3-left {
+  overflow: hidden;
+  font-size: 1.25em; }
+  .vw-box-3-left .vw-post-box-boxed {
+    height: 350px; }
+
+.vw-box-3-right-top, .vw-box-3-right-bottom {
+  float: left;
+  overflow: hidden; }
+  .vw-box-3-right-top .vw-post-box-boxed, .vw-box-3-right-bottom .vw-post-box-boxed {
+    height: 170px; }
+
+@media (max-width: 767px) {
+  .vw-box-3 {
+    padding-bottom: 10px;
+    float: right; }
+
+  .vw-box-3-right-top, .vw-box-3-right-bottom {
+    max-width: none;
+    margin: 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .vw-box-3-left {
+    padding-bottom: 10px; }
+
+  .vw-box-3-right-bottom {
+    padding-left: 5px; }
+
+  .vw-box-3-right-top {
+    padding-right: 5px; } }
+@media (min-width: 768px) {
+  .vw-box-3-left {
+    font-size: 1.563em;
+    float: right; }
+
+  .vw-box-3-right-bottom, .vw-box-3-right-top {
+    max-width: 50%; } }
+@media (min-width: 992px) {
+  .vw-box-3-left {
+    width: 70%;
+    padding-left: 10px; }
+
+  .vw-box-3-right-top, .vw-box-3-right-bottom {
+    max-width: 30%;
+    float: left; }
+
+  .vw-box-3-right-top {
+    padding-bottom: 5px; }
+
+  .vw-box-3-right-bottom {
+    padding-top: 5px; }
+
+  .vw-box-3-wrapper:nth-of-type(even) .vw-box-3-left {
+    float: left;
+    padding-left: 0;
+    padding-right: 10px; }
+  .vw-box-3-wrapper:nth-of-type(even) .vw-box-3-right-top, .vw-box-3-wrapper:nth-of-type(even) .vw-box-3-right-bottom {
+    float: right; } }
+/* -----------------------------------------------------------------------------
+ * Post Layout: Boxed
+ * -------------------------------------------------------------------------- */
+.vw-post-box-layout-boxed-1-col .block-grid-item + .block-grid-item {
+  padding-top: 0; }
+
+/* -----------------------------------------------------------------------------
+* Tag Style
+* -------------------------------------------------------------------------- */
+.vw-labels:before, .vw-labels:after {
+  content: " ";
+  display: table; }
+.vw-labels:after {
+  clear: both; }
+.vw-labels a {
+  float: right; }
+
+.vw-post-categories {
+  margin-bottom: 8px; }
+
+.vw-label,
+.vw-post-categories a {
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 3px 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 4px; }
+  .vw-label, .vw-label:hover,
+  .vw-post-categories a,
+  .vw-post-categories a:hover {
+    color: #fff; }
+  .vw-label:hover,
+  .vw-post-categories a:hover {
+    text-decoration: underline; }
+
+.vw-read-more {
+  font-size: 0.8em;
+  font-weight: bold; }
+
+/* -----------------------------------------------------------------------------
+ * About Author
+ * -------------------------------------------------------------------------- */
+.vw-about-author-section {
+  background-color: #f5f5f5;
+  padding: 30px; }
+  .vw-about-author-section .vw-author-avatar {
+    display: inline-block;
+    float: right;
+    margin-left: 20px; }
+    .vw-about-author-section .vw-author-avatar + .vw-about-author {
+      margin-right: 140px; }
+  .vw-about-author-section .vw-author-name {
+    margin-top: 0; }
+  .vw-about-author-section .vw-author-bio {
+    font-size: 0.9em; }
+  @media (max-width: 767px) {
+    .vw-about-author-section {
+      text-align: center; }
+      .vw-about-author-section .vw-author-avatar {
+        float: none;
+        margin: 0; }
+      .vw-about-author-section .avatar {
+        margin: 0; }
+      .vw-about-author-section .vw-author-avatar + .vw-about-author {
+        margin-right: 0;
+        margin-top: 2em; }
+      .vw-about-author-section .vw-author-socials {
+        margin-top: 2.5em;
+        text-align: center; } }
+  @media (min-width: 768px) {
+    .vw-about-author-section .vw-author-socials span {
+      display: inline-block; } }
+
+.vw-author-socials {
+  margin-top: 1.5em; }
+  .vw-author-socials a {
+    display: inline-block;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .vw-author-socials span {
+    display: none;
+    margin-right: 5px; }
+  .vw-author-socials .vw-icon-social-twitter:hover {
+    background-color: #55acee; }
+  .vw-author-socials .vw-icon-social-facebook:hover {
+    background-color: #3D62B3; }
+  .vw-author-socials .vw-icon-social-gplus:hover {
+    background-color: #D34836; }
+  .vw-author-socials .vw-icon-social-pinterest:hover {
+    background-color: #cc2127; }
+  .vw-author-socials .vw-icon-social-tumblr:hover {
+    background-color: #314e6c; }
+  .vw-author-socials .vw-icon-social-instagram:hover {
+    background-color: #1e5d81; }
+  .vw-author-socials .vw-icon-social-fivehundredpx:hover {
+    background-color: #000000; }
+  .vw-author-socials .vw-icon-social-dribbble:hover {
+    background-color: #ea4c89; }
+  .vw-author-socials .vw-icon-social-flickr:hover {
+    background-color: #ff0084; }
+  .vw-author-socials .vw-icon-social-linkedin:hover {
+    background-color: #007bb6; }
+  .vw-author-socials .vw-icon-social-skype:hover {
+    background-color: #00adf2; }
+  .vw-author-socials .vw-icon-social-youtube:hover {
+    background-color: #CC181E; }
+  .vw-author-socials .vw-icon-social-vimeo:hover {
+    background-color: #1da7ce; }
+  .vw-author-socials .vw-icon-social-email:hover {
+    background-color: #000000; }
+
+.vw-page-title-box .vw-author-socials {
+  margin-top: 1.5em;
+  display: block; }
+  .vw-page-title-box .vw-author-socials a {
+    margin-bottom: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Button
+ * -------------------------------------------------------------------------- */
+button, input[type=button], input[type=submit], .btn,
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button,
+.woocommerce .cart-collaterals .shipping_calculator h2 a.btn-black, .woocommerce-page .cart-collaterals .shipping_calculator h2 a.btn-black,
+.woocommerce .cart-collaterals .shipping_calculator h2 a.shipping-calculator-button, .woocommerce-page .cart-collaterals .shipping_calculator h2 a.shipping-calculator-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: bold;
+  padding: 9px 15px 6px 15px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.12);
+  background-color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  button:hover, input[type=button]:hover, input[type=submit]:hover, .btn:hover,
+  .woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover,
+  .woocommerce .cart-collaterals .shipping_calculator h2 a.btn-black:hover, .woocommerce-page .cart-collaterals .shipping_calculator h2 a.btn-black:hover,
+  .woocommerce .cart-collaterals .shipping_calculator h2 a.shipping-calculator-button:hover, .woocommerce-page .cart-collaterals .shipping_calculator h2 a.shipping-calculator-button:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #bbb; }
+
+.btn-small {
+  font-size: 10px;
+  padding: 6px 10px; }
+
+.btn-large {
+  padding: 12px 20px;
+  font-size: 16px; }
+
+.btn-full-width {
+  display: block;
+  width: 100%; }
+
+/* Colors */
+.btn > i:first-child {
+  margin-left: 0.4em;
+  font-size: 15px; }
+.btn.btn-black {
+  background-color: #000;
+  border-bottom-color: rgba(255, 255, 255, 0.13); }
+  .no-touch .btn.btn-black:hover {
+    background-color: #333; }
+.btn.btn-orange {
+  background-color: #FC7844; }
+  .no-touch .btn.btn-orange:hover {
+    background-color: #fd9369; }
+.btn.btn-red {
+  background-color: #e74c3c; }
+  .no-touch .btn.btn-red:hover {
+    background-color: #ec7063; }
+.btn.btn-yellow {
+  background-color: #F9CB31; }
+  .no-touch .btn.btn-yellow:hover {
+    background-color: #fad45a; }
+.btn.btn-blue {
+  background-color: #3498db; }
+  .no-touch .btn.btn-blue:hover {
+    background-color: #5dace2; }
+.btn.btn-green {
+  background-color: #1abc84; }
+  .no-touch .btn.btn-green:hover {
+    background-color: #48c99d; }
+.btn.btn-purple {
+  background-color: #b73b7a; }
+  .no-touch .btn.btn-purple:hover {
+    background-color: #c56295; }
+.btn.btn-pink {
+  background-color: #ED5E80; }
+  .no-touch .btn.btn-pink:hover {
+    background-color: #f17e99; }
+
+/* -----------------------------------------------------------------------------
+ * Avatar
+ * -------------------------------------------------------------------------- */
+.vw-category-thumbnail,
+.avatar {
+  border-radius: 50%;
+  margin-left: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+/* -----------------------------------------------------------------------------
+ * Pagination
+ * -------------------------------------------------------------------------- */
+#pagination {
+  margin-top: 45px; }
+  #pagination > * {
+    display: inline-block;
+    font-size: 13px;
+    padding: 8px 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+    color: #FFF;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    #pagination > *:hover {
+      text-decoration: none; }
+
+/* -----------------------------------------------------------------------------
+ * Backstretch
+ * -------------------------------------------------------------------------- */
+.backstretch:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  z-index: 1;
+  background-image: -webkit-linear-gradient( top , rgba(0, 0, 0, 0.25) 0%, transparent 3%, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 3%, transparent 40%, rgba(0, 0, 0, 0.75) 100%); }
+  .lt-ie10 .backstretch:before {
+    background: rgba(0, 0, 0, 0.15); }
+
+/* -----------------------------------------------------------------------------
+ * Supersized
+ * -------------------------------------------------------------------------- */
+#supersized img {
+  max-width: none; }
+
+#slidecaption {
+  width: 80%;
+  height: 126px;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  bottom: -1px;
+  padding: 0 15px 15px 15px; }
+
+/* -----------------------------------------------------------------------------
+ * Sticky
+ * -------------------------------------------------------------------------- */
+.vw-sticky {
+  width: 100%; }
+
+.vw-sticky-wrapper.is-sticky .vw-sticky {
+  z-index: 100;
+  right: 0;
+  left: 0;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+@media (max-width: 767px) {
+  .vw-sticky-wrapper {
+    display: none; } }
+
+/* -----------------------------------------------------------------------------
+ * Search Form
+ * -------------------------------------------------------------------------- */
+.vw-search-form {
+  position: relative; }
+  .vw-search-form .vw-search-icon {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    display: inline-block;
+    font-size: 18px;
+    height: 2em;
+    width: 2em;
+    margin-top: 0.3em;
+    cursor: pointer; }
+  .vw-search-form #s {
+    width: 100%;
+    padding-left: 25px; }
+
+/* -----------------------------------------------------------------------------
+ * Site Social Profile
+ * -------------------------------------------------------------------------- */
+.vw-site-social-profile-icon {
+  display: inline-block; }
+  .no-touch .vw-site-social-profile-icon {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .vw-site-social-profile-icon + .vw-site-social-profile-icon {
+    margin-right: 5px; }
+  .vw-site-social-profile-icon:hover {
+    color: #fff; }
+  .vw-site-social-profile-icon i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center; }
+
+/* -----------------------------------------------------------------------------
+ * Post Slider
+ * -------------------------------------------------------------------------- */
+.vw-post-slider {
+  margin-bottom: 0; }
+
+.vw-post-slider-no-control-nav .flex-control-nav {
+  display: none; }
+
+.vw-post-slider-title {
+  color: #fff;
+  margin: 0;
+  text-transform: capitalize; }
+
+.vw-post-slider-image img {
+  margin: 0; }
+
+.vw-post-slider-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 20%;
+  padding-right: 2em;
+  background-color: rgba(0, 0, 0, 0.4);
+  background: -webkit-linear-gradient( top , transparent 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 100%); }
+  @media (max-width: 767px) {
+    .vw-post-slider-info {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      padding-right: 1em; } }
+
+.vw-post-slider-template-default .vw-post-categories {
+  display: inline-block; }
+@media (max-width: 767px) {
+  .vw-post-slider-template-default .vw-post-slider-title {
+    font-size: 1.6em; }
+  .vw-post-slider-template-default .vw-post-categories a {
+    font-size: 0.5em; } }
+
+.vw-post-slider-template-category-thumbnail .vw-category-thumbnail {
+  float: right;
+  width: 75px;
+  height: 75px; }
+  .vw-post-slider-template-category-thumbnail .vw-category-thumbnail ~ * {
+    margin-right: 100px; }
+.vw-post-slider-template-category-thumbnail .vw-post-meta {
+  margin-top: 0.5em;
+  margin-bottom: 0; }
+  .vw-post-slider-template-category-thumbnail .vw-post-meta .avatar {
+    display: none; }
+@media (max-width: 767px) {
+  .vw-post-slider-template-category-thumbnail .vw-post-slider-title {
+    font-size: 1.6em; }
+  .vw-post-slider-template-category-thumbnail .vw-category-thumbnail {
+    width: 25px;
+    height: 25px; }
+    .vw-post-slider-template-category-thumbnail .vw-category-thumbnail ~ * {
+      margin-right: 35px; }
+  .vw-post-slider-template-category-thumbnail .vw-post-meta {
+    font-size: 0.5em; } }
+
+.vw-post-slider-template-large .vw-post-slider-mini-box {
+  display: inline-block;
+  position: relative; }
+.vw-post-slider-template-large .vw-post-slider-mini-box-left {
+  overflow: hidden; }
+.vw-post-slider-template-large .vw-post-slider-mini-box-right-top, .vw-post-slider-template-large .vw-post-slider-mini-box-right-bottom {
+  max-width: 50%;
+  float: left; }
+.vw-post-slider-template-large .vw-post-slider-mini-box-right-top {
+  margin-right: 1%;
+  max-width: 49%; }
+.vw-post-slider-template-large .vw-post-slider-mini-box-right-bottom .vw-post-slider-image {
+  margin-bottom: -1%; }
+@media (max-width: 479px) {
+  .vw-post-slider-template-large .vw-post-slider-mini-box-right-top, .vw-post-slider-template-large .vw-post-slider-mini-box-right-bottom {
+    max-width: none;
+    float: none;
+    margin: 0; }
+  .vw-post-slider-template-large .vw-post-slider-title {
+    font-size: 1.25em; } }
+@media (min-width: 992px) {
+  .vw-post-slider-template-large .vw-post-slider-mini-box-left {
+    float: right;
+    max-width: 67.1%;
+    margin-left: 1%; }
+    .vw-post-slider-template-large .vw-post-slider-mini-box-left .vw-post-slider-image {
+      margin-bottom: -1%; }
+  .vw-post-slider-template-large .vw-post-slider-mini-box-right-top, .vw-post-slider-template-large .vw-post-slider-mini-box-right-bottom {
+    max-width: 31.9%;
+    float: left;
+    margin: 0; }
+  .vw-post-slider-template-large .vw-post-slider-mini-box-right-bottom {
+    margin-top: 1%; } }
+
+@media (max-width: 767px) {
+  .flex-control-nav, .flex-direction-nav {
+    display: none; } }
+/* -----------------------------------------------------------------------------
+ * Category Post Slider
+ * -------------------------------------------------------------------------- */
+.vw-category-post-slider {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee; }
+  .vw-category-post-slider + .block-grid {
+    margin-top: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Category Top Content
+ * -------------------------------------------------------------------------- */
+.vw-category-top-content {
+  margin-bottom: 30px; }
+  .vw-category-top-content + .block-grid {
+    margin-top: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Instant Search
+ * -------------------------------------------------------------------------- */
+.vw-instant-search-panel {
+  margin: 0;
+  z-index: 100;
+  padding: 10px;
+  position: absolute; }
+  .vw-instant-search-panel #s {
+    width: 100%;
+    color: #000; }
+
+.vw-instant-search-result-panel {
+  list-style: none;
+  padding: 0 15px;
+  margin: 0; }
+  .vw-instant-search-result-panel > li {
+    padding: 15px 0; }
+    .vw-instant-search-result-panel > li:first-child {
+      margin-top: 15px; }
+    .vw-instant-search-result-panel > li + li {
+      border-top: 1px solid rgba(128, 128, 128, 0.5); }
+
+.vw-instant-search-result-item {
+  font-size: 0.85em;
+  line-height: 1.4em; }
+
+.vw-instant-search-result-thumbnail {
+  float: right;
+  width: 60px;
+  height: 60px; }
+  .vw-instant-search-result-thumbnail img {
+    margin: 0; }
+
+.vw-instant-search-result-content {
+  margin-right: 70px; }
+
+.vw-instant-search-result-title {
+  font-weight: bold;
+  margin-bottom: 3px; }
+
+.vw-instant-search-result-date {
+  font-size: 10px;
+  opacity: 0.75; }
+
+/* -----------------------------------------------------------------------------
+ * Custom Tiled Gallery
+ * -------------------------------------------------------------------------- */
+.vw-custom-tiled-gallery {
+  margin: 30px 0; }
+  .vw-custom-tiled-gallery .gallery-item {
+    display: inline-block;
+    float: right;
+    width: 32.33%;
+    margin: 0.5%;
+    position: relative; }
+  .vw-custom-tiled-gallery .gallery-caption {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 5px 15px;
+    color: white;
+    font-size: 0.85em;
+    font-style: italic;
+    line-height: 1.2em; }
+  .vw-custom-tiled-gallery br + br {
+    display: none; }
+  .vw-custom-tiled-gallery a {
+    display: inline-block;
+    max-width: 100%; }
+    .vw-custom-tiled-gallery a:hover img {
+      opacity: 0.75; }
+  .vw-custom-tiled-gallery img {
+    max-width: 100%;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+
+/* -----------------------------------------------------------------------------
+ * qTranslate
+ * -------------------------------------------------------------------------- */
+.qtrans_language_chooser {
+  padding: 0;
+  margin: 0; }
+  .qtrans_language_chooser li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; }
+
+/* -----------------------------------------------------------------------------
+ * Review Box
+ * -------------------------------------------------------------------------- */
+.vw-review-box {
+  margin-bottom: 1.3em;
+  padding: 10px;
+  color: #fff;
+  background-color: #eee; }
+
+.vw-review-position-top-floating {
+  float: right;
+  width: 60%;
+  margin-left: 1.3em; }
+
+.vw-review-box-title {
+  margin: 0;
+  padding: 10px 15px;
+  color: inherit;
+  background-color: #3a3a3a; }
+
+.vw-review-item {
+  position: relative;
+  margin-top: 2px; }
+
+.vw-review-item-title {
+  float: right;
+  position: relative;
+  z-index: 2; }
+
+.vw-review-item-title-score {
+  font-weight: bold; }
+
+.vw-review-item-score {
+  text-align: center;
+  float: left; }
+  .vw-review-item-score.vw-review-score-percentage {
+    position: absolute;
+    height: 100%;
+    background-image: url(images/stripe-white.png);
+    background-repeat: repeat; }
+
+.vw-review-box-summary {
+  margin-top: 2px;
+  display: table;
+  width: 100%;
+  position: relative;
+  min-height: 85px;
+  border-left-color: #eee; }
+
+.vw-review-summary, .vw-review-total-score {
+  display: table-cell;
+  vertical-align: middle; }
+
+.vw-review-summary {
+  border-left: 2px solid; }
+
+.vw-review-total-score, .vw-review-item-score.vw-review-score-star {
+  width: 115px;
+  text-align: center; }
+
+.vw-review-total-score.vw-review-score-percentage, .vw-review-total-score.vw-review-score-point {
+  font-size: 44px;
+  font-weight: bold; }
+.vw-review-total-score.vw-review-score-percentage:after {
+  content: '%';
+  font-size: 0.5em;
+  font-weight: normal; }
+
+.vw-review-item-title, .vw-review-score-star, .vw-review-summary {
+  padding: 6px 0; }
+
+.vw-review-item-title, .vw-review-summary {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.vw-review-score-star {
+  line-height: 1em; }
+  .vw-review-score-star img {
+    max-width: 16px;
+    vertical-align: middle; }
+  .vw-review-score-star img + img {
+    margin-right: 3px; }
+  .vw-review-score-star .vw-review-score-number {
+    width: auto !important; }
+
+.vw-review-item, .vw-review-box-summary {
+  background-color: #444444; }
+
+.vw-post-tabed-tab, .vw-about-author-section .vw-author-socials a {
+  background-color: #3a3a3a; }
+
+/* -----------------------------------------------------------------------------
+ * Review Editor
+ * -------------------------------------------------------------------------- */
+#vw_review_editor .field-review-summary, #vw_review_editor .field-review-score {
+  display: none; }
+#vw_review_editor .review-scores {
+  margin: 15px 0;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid #ddd; }
+  #vw_review_editor .review-scores .review-score-row {
+    border: 1px solid #ddd;
+    background-color: #F1F1F1;
+    background: -webkit-linear-gradient( bottom , #ececec, #f9f9f9);
+    background: linear-gradient(to top, #ececec, #f9f9f9);
+    border-radius: 2px;
+    padding: 5px 5px 5px 10px;
+    position: relative; }
+    #vw_review_editor .review-scores .review-score-row i {
+      color: #ccc; }
+      #vw_review_editor .review-scores .review-score-row i:hover {
+        color: #3FACD6; }
+    #vw_review_editor .review-scores .review-score-row .move-icon {
+      font-size: 24px;
+      line-height: 1em;
+      vertical-align: middle;
+      margin-left: 10px;
+      cursor: move; }
+    #vw_review_editor .review-scores .review-score-row .delete-icon {
+      font-size: 16px;
+      line-height: 1em;
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      cursor: pointer;
+      margin-top: -0.5em; }
+    #vw_review_editor .review-scores .review-score-row .review-score-label {
+      font-size: 11px;
+      color: #666;
+      font-weight: bold;
+      margin-left: 5px; }
+    #vw_review_editor .review-scores .review-score-row .rwmb-text {
+      width: 40%;
+      margin-left: 10px; }
+  #vw_review_editor .review-scores .review-score-row + .review-score-row {
+    margin-top: 5px; }
+
+/* -----------------------------------------------------------------------------
+ * Simple Page Composer
+ * -------------------------------------------------------------------------- */
+.vwspc-section + .vwspc-section {
+  margin-top: 30px; }
+
+.vwspc-section-title {
+  margin-top: 0;
+  margin-bottom: 1em; }
+
+.vwspc-section-post-slider-section + .vwspc-section-post-slider-section {
+  margin-top: 1%; }
+
+@media (max-width: 991px) {
+  .vwspc-sidebar-column {
+    margin-top: 45px; } }
+@media (min-width: 992px) {
+  .vwspc-section-post-slider-section:nth-of-type(even) .vw-post-slider-mini-box-left {
+    float: left;
+    margin-left: 0;
+    margin-right: 1%; }
+  .vwspc-section-post-slider-section:nth-of-type(even) .vw-post-slider-mini-box-right-top, .vwspc-section-post-slider-section:nth-of-type(even) .vw-post-slider-mini-box-right-bottom {
+    float: right; } }
+/* -----------------------------------------------------------------------------
+ * Widgets Area
+ * -------------------------------------------------------------------------- */
+.widget + .widget {
+  margin-top: 30px; }
+.widget:first-child .widget-title {
+  padding-top: 0; }
+
+.widget-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  position: relative; }
+
+.vw-no-widget-warning {
+  font-style: italic;
+  border: 1px dashed rgba(127, 127, 127, 0.7);
+  padding: 0.5em; }
+  .vw-no-widget-warning a {
+    text-decoration: underline; }
+
+/* -----------------------------------------------------------------------------
+ * Widget Common Style
+ * -------------------------------------------------------------------------- */
+.vw-latest-posts-style-small-left-thumbnail .vw-post-box + .vw-post-box,
+.vw-latest-posts-style-large-small-left-thumbnail .vw-post-box + .vw-post-box,
+.vw-latest-posts-style-small-author .vw-post-box + .vw-post-box,
+.vw-latest-comments .vw-post-box + .vw-post-box {
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Envirra Social Share
+ * -------------------------------------------------------------------------- */
+.vw-social-share-box {
+  position: relative; }
+  .vw-social-share-box .box {
+    margin: 5% 8% 0 8%; }
+  .vw-social-share-box .box a {
+    color: #404040;
+    text-shadow: 0 1px 1px rgba(167, 167, 167, 0.4); }
+  .vw-social-share-box .box a:hover {
+    text-decoration: none; }
+  .vw-social-share-box .count {
+    font-weight: bold;
+    font-size: 50px;
+    float: right;
+    border-left: 2px solid #57b8d1;
+    line-height: 40px;
+    padding-left: 10px; }
+  .vw-social-share-box .share {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 82px; }
+  .vw-social-share-box .buttons {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  .vw-social-share-box .button {
+    float: right;
+    margin: 0 0 0 10px; }
+  .vw-social-share-box .facebook {
+    margin: 0 0 0 4px; }
+
+/**
+ * Line animation
+ */
+/* -----------------------------------------------------------------------------
+ * Widget: Envirra Author List
+ * -------------------------------------------------------------------------- */
+.widget_vw_widget_author_list {
+  margin-bottom: -10px; }
+  .widget_vw_widget_author_list ul {
+    list-style: none;
+    padding-right: 0;
+    margin: 0; }
+  .widget_vw_widget_author_list li {
+    float: right;
+    margin: 0 0 10px 5px !important; }
+    .widget_vw_widget_author_list li:before {
+      display: none !important; }
+  .widget_vw_widget_author_list .avatar {
+    width: 80px;
+    height: 80px; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Envirra Social Counter
+ * -------------------------------------------------------------------------- */
+.widget_vw_widget_social_counter {
+  margin-bottom: -15px; }
+
+.vw-social-counter {
+  width: 50%;
+  min-width: 146px;
+  display: inline-block;
+  float: right;
+  margin-bottom: 15px; }
+
+.vw-social-counter-icon {
+  float: right;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  margin-left: 10px; }
+  .vw-social-counter-icon i {
+    line-height: 50px;
+    font-size: 18px; }
+
+.vw-social-counter-count, .vw-social-counter-count, .vw-social-counter-icon {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.vw-social-counter-twitter .vw-social-counter-icon {
+  background-color: #55acee;
+  color: #fff; }
+.vw-social-counter-twitter:hover .vw-social-counter-icon {
+  background-color: #88c4f3; }
+.vw-social-counter-twitter:hover .vw-social-counter-count {
+  color: #55acee; }
+
+.vw-social-counter-facebook .vw-social-counter-icon {
+  background-color: #3D62B3;
+  color: #fff; }
+.vw-social-counter-facebook:hover .vw-social-counter-icon {
+  background-color: #7791c9; }
+.vw-social-counter-facebook:hover .vw-social-counter-count {
+  color: #3D62B3; }
+
+.vw-social-counter-youtube .vw-social-counter-icon {
+  background-color: #CC181E;
+  color: #fff; }
+.vw-social-counter-youtube:hover .vw-social-counter-icon {
+  background-color: #db5d61; }
+.vw-social-counter-youtube:hover .vw-social-counter-count {
+  color: #CC181E; }
+
+.vw-social-counter-googleplus .vw-social-counter-icon {
+  background-color: #D34836;
+  color: #fff; }
+.vw-social-counter-googleplus:hover .vw-social-counter-icon {
+  background-color: #e07e72; }
+.vw-social-counter-googleplus:hover .vw-social-counter-count {
+  color: #D34836; }
+
+.vw-social-counter-counter {
+  float: right;
+  display: inline-block; }
+
+.vw-social-counter-count {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #333;
+  margin-top: 3px; }
+
+.vw-social-counter-unit {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 1px; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Envirra Social Profile
+ * -------------------------------------------------------------------------- */
+.widget_vw_widget_social_profile .vw-site-social-profile-icon {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .widget_vw_widget_social_profile .vw-site-social-profile-icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px; }
+    .widget_vw_widget_social_profile .vw-site-social-profile-icon i:before {
+      width: auto; }
+.widget_vw_widget_social_profile .vw-site-social-profile-icon + .vw-site-social-profile-icon {
+  margin-right: 0; }
+.widget_vw_widget_social_profile .vw-site-social-delicious {
+  background-color: #0065c7; }
+  .widget_vw_widget_social_profile .vw-site-social-delicious:hover {
+    background-color: #4c93d7; }
+.widget_vw_widget_social_profile .vw-site-social-digg {
+  background-color: #000000; }
+  .widget_vw_widget_social_profile .vw-site-social-digg:hover {
+    background-color: #4c4c4c; }
+.widget_vw_widget_social_profile .vw-site-social-dribbble {
+  background-color: #ea4c89; }
+  .widget_vw_widget_social_profile .vw-site-social-dribbble:hover {
+    background-color: #f081ac; }
+.widget_vw_widget_social_profile .vw-site-social-facebook {
+  background-color: #3D62B3; }
+  .widget_vw_widget_social_profile .vw-site-social-facebook:hover {
+    background-color: #7791c9; }
+.widget_vw_widget_social_profile .vw-site-social-flickr {
+  background-color: #ff0084; }
+  .widget_vw_widget_social_profile .vw-site-social-flickr:hover {
+    background-color: #ff4ca8; }
+.widget_vw_widget_social_profile .vw-site-social-forrst {
+  background-color: #33713e; }
+  .widget_vw_widget_social_profile .vw-site-social-forrst:hover {
+    background-color: #709b77; }
+.widget_vw_widget_social_profile .vw-site-social-github {
+  background-color: #000000; }
+  .widget_vw_widget_social_profile .vw-site-social-github:hover {
+    background-color: #4c4c4c; }
+.widget_vw_widget_social_profile .vw-site-social-googleplus {
+  background-color: #D34836; }
+  .widget_vw_widget_social_profile .vw-site-social-googleplus:hover {
+    background-color: #e07e72; }
+.widget_vw_widget_social_profile .vw-site-social-instagram {
+  background-color: #1e5d81; }
+  .widget_vw_widget_social_profile .vw-site-social-instagram:hover {
+    background-color: #618da6; }
+.widget_vw_widget_social_profile .vw-site-social-linkedin {
+  background-color: #007bb6; }
+  .widget_vw_widget_social_profile .vw-site-social-linkedin:hover {
+    background-color: #4ca2cb; }
+.widget_vw_widget_social_profile .vw-site-social-lastfm {
+  background-color: #d21309; }
+  .widget_vw_widget_social_profile .vw-site-social-lastfm:hover {
+    background-color: #df5952; }
+.widget_vw_widget_social_profile .vw-site-social-pinterest {
+  background-color: #cc2127; }
+  .widget_vw_widget_social_profile .vw-site-social-pinterest:hover {
+    background-color: #db6367; }
+.widget_vw_widget_social_profile .vw-site-social-rss {
+  background-color: #ff7700; }
+  .widget_vw_widget_social_profile .vw-site-social-rss:hover {
+    background-color: #ff9f4c; }
+.widget_vw_widget_social_profile .vw-site-social-skype {
+  background-color: #00adf2; }
+  .widget_vw_widget_social_profile .vw-site-social-skype:hover {
+    background-color: #4cc5f5; }
+.widget_vw_widget_social_profile .vw-site-social-tumblr {
+  background-color: #314e6c; }
+  .widget_vw_widget_social_profile .vw-site-social-tumblr:hover {
+    background-color: #6e8398; }
+.widget_vw_widget_social_profile .vw-site-social-twitter {
+  background-color: #55acee; }
+  .widget_vw_widget_social_profile .vw-site-social-twitter:hover {
+    background-color: #88c4f3; }
+.widget_vw_widget_social_profile .vw-site-social-vimeo {
+  background-color: #1da7ce; }
+  .widget_vw_widget_social_profile .vw-site-social-vimeo:hover {
+    background-color: #60c1dc; }
+.widget_vw_widget_social_profile .vw-site-social-yahoo {
+  background-color: #44029a; }
+  .widget_vw_widget_social_profile .vw-site-social-yahoo:hover {
+    background-color: #7c4db8; }
+.widget_vw_widget_social_profile .vw-site-social-youtube {
+  background-color: #CC181E; }
+  .widget_vw_widget_social_profile .vw-site-social-youtube:hover {
+    background-color: #db5d61; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Post Tabbed
+ * -------------------------------------------------------------------------- */
+.vw-post-tabed {
+  background-color: #F5F5F5; }
+  .vw-post-tabed .vw-post-box-small-comment p {
+    margin-bottom: 0; }
+  .vw-post-tabed .vw-post-box + .vw-post-box,
+  .vw-post-tabed .block-grid-item + .block-grid-item .vw-post-box {
+    border-top: 1px solid #dedede; }
+  .vw-post-tabed .block-grid-item + .block-grid-item {
+    padding-top: 0; }
+  .vw-post-tabed .block-grid-item + .block-grid-item .vw-post-box {
+    padding-top: 15px; }
+
+.vw-post-tabed-tabs {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  list-style: none; }
+  .vw-post-tabed-tabs li:before {
+    background: transparent !important; }
+
+.vw-post-tabed-tab {
+  display: inline-block;
+  float: right;
+  width: 33.33%;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .vw-post-tabed-tab a {
+    display: block;
+    outline: none;
+    font-size: 0.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.12); }
+    .vw-post-tabed-tab a, .vw-post-tabed-tab a:hover, .vw-post-tabed-tab a:focus {
+      color: #fff; }
+  .vw-post-tabed-tab.ui-state-hover {
+    background-color: #666; }
+
+.vw-post-tabed-content {
+  padding: 0px 15px 15px 15px; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Posts
+ * -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vw-page-sidebar .latest-posts-style-full-thumbnail .vw-post-box-post-title {
+    font-size: 1em; } }
+/* -----------------------------------------------------------------------------
+ * Widget: FeedBurner
+ * -------------------------------------------------------------------------- */
+.vw-widget-feedburner-container {
+  background-color: #f5f5f5;
+  padding: 25px; }
+
+.vw-widget-feedburner-text {
+  margin-top: 0;
+  margin-bottom: 1.3em; }
+
+.vw-widget-feedburner-email {
+  width: 100%;
+  margin-bottom: 1em; }
+
+/* -----------------------------------------------------------------------------
+ * Wdiget: Login
+ * -------------------------------------------------------------------------- */
+.vw-login-form-username > input,
+.vw-login-form-pass > input {
+  width: 100%;
+  display: block; }
+
+.vw-login-form-lost-password {
+  float: left; }
+
+.vw-loggedin-form .avatar {
+  float: right;
+  margin-left: 1.5em; }
+.vw-loggedin-form .vw-loggedin-form-links {
+  padding-right: 20px;
+  font-size: 0.9em; }
+
+.vw-loggedin-user-info {
+  float: right; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Default Style For Wordpress's Widget
+ * -------------------------------------------------------------------------- */
+.widget_archive > ul, .widget_archive > ol,
+.widget_categories > ul,
+.widget_categories > ol,
+.widget_nav_menu > div > ul,
+.widget_nav_menu > div > ol,
+.widget_meta > ul,
+.widget_meta > ol,
+.widget_pages > ul,
+.widget_pages > ol,
+.widget_recent_comments > ul,
+.widget_recent_comments > ol,
+.widget_recent_entries > ul,
+.widget_recent_entries > ol,
+.widget_rss > ul,
+.widget_rss > ol {
+  list-style: none;
+  padding-right: 0px; }
+.widget_archive li,
+.widget_categories li,
+.widget_nav_menu > div li,
+.widget_meta li,
+.widget_pages li,
+.widget_recent_comments li,
+.widget_recent_entries li,
+.widget_rss li {
+  padding-top: 7px;
+  margin-bottom: 7px; }
+.widget_archive li + li,
+.widget_categories li + li,
+.widget_nav_menu > div li + li,
+.widget_meta li + li,
+.widget_pages li + li,
+.widget_recent_comments li + li,
+.widget_recent_entries li + li,
+.widget_rss li + li {
+  border-top: 1px solid #eee;
+  margin-top: 7px; }
+.vw-site-footer .widget_archive li + li, .vw-site-footer
+.widget_categories li + li, .vw-site-footer
+.widget_nav_menu > div li + li, .vw-site-footer
+.widget_meta li + li, .vw-site-footer
+.widget_pages li + li, .vw-site-footer
+.widget_recent_comments li + li, .vw-site-footer
+.widget_recent_entries li + li, .vw-site-footer
+.widget_rss li + li {
+  border-top-color: rgba(255, 255, 255, 0.05); }
+.widget_archive a,
+.widget_categories a,
+.widget_nav_menu > div a,
+.widget_meta a,
+.widget_pages a,
+.widget_recent_comments a,
+.widget_recent_entries a,
+.widget_rss a {
+  color: inherit; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Custom Menu
+ * -------------------------------------------------------------------------- */
+.widget_recent_entries .post-date {
+  display: block;
+  font-size: 0.85em;
+  font-style: italic;
+  opacity: 0.7; }
+
+/* -----------------------------------------------------------------------------
+ * Widget: Calendar
+ * -------------------------------------------------------------------------- */
+#wp-calendar {
+  width: 100%; }
+
+#wp-calendar caption {
+  text-align: left;
+  color: #333;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+#wp-calendar thead {
+  font-size: 10px; }
+
+#wp-calendar thead th {
+  padding-bottom: 10px;
+  text-align: center; }
+
+#wp-calendar tbody {
+  color: #aaa; }
+
+#wp-calendar tbody td {
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 8px; }
+
+#wp-calendar tbody td.pad:hover {
+  background: transparent !important; }
+
+#wp-calendar tbody td:hover {
+  color: #fff; }
+
+#wp-calendar tbody td:hover a {
+  color: #fff; }
+
+#wp-calendar tbody a {
+  font-weight: bold; }
+
+#wp-calendar tbody .pad {
+  background: none; }
+
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: left; }
+
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+/* -----------------------------------------------------------------------------
+ * Accordion
+ * -------------------------------------------------------------------------- */
+.vw-accordions {
+  margin-bottom: 30px; }
+
+.vw-accordion {
+  margin-top: 30px; }
+  .vw-accordion .ui-icon {
+    color: #464646; }
+    .vw-accordion .ui-icon:before {
+      content: "\e818";
+      font-family: "entypo";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-left: .2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      margin-right: .2em;
+      font-size: 18px; }
+  .vw-accordion .ui-state-hover {
+    opacity: 0.75; }
+  .vw-accordion .ui-accordion-header-active {
+    border-top: 2px solid #777; }
+    .vw-accordion .ui-accordion-header-active .ui-icon:before {
+      content: '\e81b'; }
+  .vw-accordion + .vw-accordion {
+    margin-top: 15px; }
+  .vw-accordion + * {
+    margin-top: 30px; }
+
+.vw-accordion-header {
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+
+.vw-accordion-header-text {
+  margin-right: 1em;
+  font-size: 1.1em;
+  font-weight: bold; }
+
+.vw-accordion-content {
+  display: none;
+  padding: 15px 50px 15px 0; }
+
+/* -----------------------------------------------------------------------------
+ * Column Shortcode
+ * -------------------------------------------------------------------------- */
+.vw-row-shortcode {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 1.3em; }
+  .vw-row-shortcode:before, .vw-row-shortcode:after {
+    content: " ";
+    display: table; }
+  .vw-row-shortcode:after {
+    clear: both; }
+
+.vw-column-shortcode {
+  position: relative;
+  float: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%; }
+
+@media (max-width: 991px) {
+  .vw-row-shortcode > .vw-column-shortcode {
+    margin-bottom: 30px; }
+    .vw-row-shortcode > .vw-column-shortcode:last-child {
+      margin-bottom: 0; } }
+@media (min-width: 992px) {
+  .vw-one-half {
+    width: 50%; }
+
+  .vw-one-third {
+    width: 33.333333333%; }
+
+  .vw-two-third {
+    width: 66.666666666%; }
+
+  .vw-one-fourth {
+    width: 25%; }
+
+  .vw-three-fourth {
+    width: 75%; }
+
+  .vw-one-fifth {
+    width: 20%; }
+
+  .vw-two-fifth {
+    width: 40%; }
+
+  .vw-three-fifth {
+    width: 60%; } }
+/* -----------------------------------------------------------------------------
+ * Dropcap
+ * -------------------------------------------------------------------------- */
+.vw-dropcap {
+  font-size: 2.75em;
+  line-height: 1em;
+  float: right;
+  margin-left: 0.35em;
+  margin-top: 4px; }
+
+.vw-dropcap-standard {
+  margin-top: 2px; }
+
+.vw-dropcap-circle, .vw-dropcap-box {
+  font-size: 1.75em;
+  color: #fff;
+  background-color: #f5f5f5;
+  padding: 6px 9px;
+  text-align: center; }
+
+.vw-dropcap-circle {
+  border-radius: 50%; }
+
+/* -----------------------------------------------------------------------------
+ * Gap
+ * -------------------------------------------------------------------------- */
+.vw-gap {
+  display: block; }
+
+/* -----------------------------------------------------------------------------
+ * Infobox
+ * -------------------------------------------------------------------------- */
+.vw-infobox {
+  margin: 1.414em 0;
+  padding: 10px;
+  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: center; }
+
+.vw-infobox-inner {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1.414em 0; }
+
+.vw-infobox-title {
+  margin: 0; }
+  .vw-infobox-title + .vw-infobox-content {
+    margin-top: 15px; }
+
+.vw-infobox-content {
+  font-size: 1.15em;
+  opacity: 0.6;
+  padding: 0 0.8em; }
+
+/* -----------------------------------------------------------------------------
+ * List
+ * -------------------------------------------------------------------------- */
+.vw-list-shortcode {
+  list-style: none;
+  padding-right: 1.5em; }
+  .vw-list-shortcode li > i:first-child {
+    color: #464646; }
+
+/* -----------------------------------------------------------------------------
+ * Mark
+ * -------------------------------------------------------------------------- */
+mark.vw-mark-style-yellow {
+  background-color: #fff000; }
+mark.vw-mark-style-grey {
+  background-color: #ccc; }
+mark.vw-mark-style-dark {
+  background-color: #222;
+  color: #efefef; }
+
+/* -----------------------------------------------------------------------------
+ * Quote
+ * -------------------------------------------------------------------------- */
+.vw-quote {
+  margin: 1.414em 30px 1.414em 0;
+  padding: 0.9em 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  font-size: 1.2em;
+  font-weight: bold; }
+
+@media (min-width: 768px) {
+  .vw-quote {
+    margin-top: 0.5em;
+    max-width: 40%;
+    float: right; }
+
+  .vw-quote-align-right {
+    float: left;
+    margin-right: 30px;
+    margin-left: 0; } }
+.vw-quote-align-none {
+  float: none;
+  max-width: none; }
+
+.vw-quote-cite {
+  margin-top: 0.9em;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: normal;
+  opacity: 0.75;
+  display: block; }
+
+/* -----------------------------------------------------------------------------
+ * Tabs
+ * -------------------------------------------------------------------------- */
+.vw-tabs {
+  margin: 30px 0; }
+  .vw-tabs .vw-tab-title {
+    cursor: pointer;
+    color: #464646;
+    margin: 0;
+    text-decoration: none; }
+    .vw-tabs .vw-tab-title i {
+      float: right;
+      margin-left: 5px;
+      margin-top: -2px; }
+      .vw-tabs .vw-tab-title i:before {
+        text-align: right;
+        display: inline; }
+  .vw-tabs .vw-full-tab {
+    margin-top: -1px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px; }
+    .vw-tabs .vw-full-tab.active {
+      color: #fff;
+      background-color: #464646;
+      border-color: #464646; }
+      .vw-tabs .vw-full-tab.active:hover {
+        color: #fff; }
+  .vw-tabs .vw-tab-content {
+    display: none;
+    padding: 15px 25px 15px 25px;
+    background-color: #fff; }
+
+.vw-tabs.vw-style-top-tab .vw-tab-titles {
+  border-bottom: 2px solid #464646; }
+  .vw-tabs.vw-style-top-tab .vw-tab-titles .vw-tab-title {
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 -1px -1px; }
+    .vw-tabs.vw-style-top-tab .vw-tab-titles .vw-tab-title.active {
+      box-shadow: none;
+      border-color: #464646;
+      background-color: #464646;
+      color: #fff; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Cart Button
+ * -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .vw-cart-button-wrapper:hover .vw-cart-button-panel {
+    visibility: visible;
+    opacity: 1; } }
+
+.vw-cart-button, .vw-cart-button:hover {
+  text-decoration: none; }
+
+.vw-cart-button-count {
+  color: #fff;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0 4px; }
+
+.vw-cart-button-panel {
+  position: absolute;
+  z-index: 10;
+  width: 350px;
+  left: 0;
+  top: 100%;
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out; }
+  @media (max-width: 479px) {
+    .vw-cart-button-panel {
+      width: 100%; } }
+  .vw-cart-button-panel .widgettitle {
+    display: none; }
+  .vw-cart-button-panel .widget_shopping_cart .widget_shopping_cart_content .total {
+    border-top: 1px solid rgba(127, 127, 127, 0.5) !important; }
+  .vw-cart-button-panel .quantity {
+    opacity: 0.5; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce Templates
+ * -------------------------------------------------------------------------- */
+.vw-woocommerce-breadcrumb {
+  margin-bottom: 1em; }
+
+.woocommerce .woocommerce-ordering, .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-ordering, .woocommerce-page .woocommerce-result-count {
+  margin-bottom: 2em; }
+
+.woocommerce #content .quantity, .woocommerce .quantity, .woocommerce-page #content .quantity, .woocommerce-page .quantity {
+  overflow: visible;
+  width: auto; }
+  .woocommerce #content .quantity input.qty, .woocommerce #content .quantity .plus, .woocommerce #content .quantity .minus, .woocommerce .quantity input.qty, .woocommerce .quantity .plus, .woocommerce .quantity .minus, .woocommerce-page #content .quantity input.qty, .woocommerce-page #content .quantity .plus, .woocommerce-page #content .quantity .minus, .woocommerce-page .quantity input.qty, .woocommerce-page .quantity .plus, .woocommerce-page .quantity .minus {
+    border: 1px solid #ddd; }
+  .woocommerce #content .quantity input.qty, .woocommerce .quantity input.qty, .woocommerce-page #content .quantity input.qty, .woocommerce-page .quantity input.qty {
+    height: 35px; }
+    .woocommerce #content .quantity input.qty::-webkit-inner-spin-button, .woocommerce #content .quantity input.qty::-webkit-outer-spin-button, .woocommerce .quantity input.qty::-webkit-inner-spin-button, .woocommerce .quantity input.qty::-webkit-outer-spin-button, .woocommerce-page #content .quantity input.qty::-webkit-inner-spin-button, .woocommerce-page #content .quantity input.qty::-webkit-outer-spin-button, .woocommerce-page .quantity input.qty::-webkit-inner-spin-button, .woocommerce-page .quantity input.qty::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+  .woocommerce #content .quantity .plus, .woocommerce #content .quantity .minus, .woocommerce .quantity .plus, .woocommerce .quantity .minus, .woocommerce-page #content .quantity .plus, .woocommerce-page #content .quantity .minus, .woocommerce-page .quantity .plus, .woocommerce-page .quantity .minus {
+    height: 35px;
+    width: 25px;
+    float: right;
+    position: static;
+    text-shadow: none;
+    box-shadow: none;
+    background: #f5f5f5; }
+    .woocommerce #content .quantity .plus:focus, .woocommerce #content .quantity .minus:focus, .woocommerce .quantity .plus:focus, .woocommerce .quantity .minus:focus, .woocommerce-page #content .quantity .plus:focus, .woocommerce-page #content .quantity .minus:focus, .woocommerce-page .quantity .plus:focus, .woocommerce-page .quantity .minus:focus {
+      outline: none; }
+    .woocommerce #content .quantity .plus:hover, .woocommerce #content .quantity .minus:hover, .woocommerce .quantity .plus:hover, .woocommerce .quantity .minus:hover, .woocommerce-page #content .quantity .plus:hover, .woocommerce-page #content .quantity .minus:hover, .woocommerce-page .quantity .plus:hover, .woocommerce-page .quantity .minus:hover {
+      background: #ddd; }
+  .woocommerce #content .quantity .minus, .woocommerce .quantity .minus, .woocommerce-page #content .quantity .minus, .woocommerce-page .quantity .minus {
+    margin-left: -1px; }
+  .woocommerce #content .quantity .plus, .woocommerce .quantity .plus, .woocommerce-page #content .quantity .plus, .woocommerce-page .quantity .plus {
+    margin-right: -1px; }
+
+.woocommerce #content nav.woocommerce-pagination, .woocommerce nav.woocommerce-pagination, .woocommerce-page #content nav.woocommerce-pagination, .woocommerce-page nav.woocommerce-pagination {
+  display: block;
+  padding-top: 1em;
+  margin-top: 3em;
+  margin-left: 0.5em;
+  border-top: 1px solid #D2D2D2;
+  text-align: right; }
+  .woocommerce #content nav.woocommerce-pagination ul, .woocommerce nav.woocommerce-pagination ul, .woocommerce-page #content nav.woocommerce-pagination ul, .woocommerce-page nav.woocommerce-pagination ul {
+    border: none; }
+    .woocommerce #content nav.woocommerce-pagination ul li, .woocommerce nav.woocommerce-pagination ul li, .woocommerce-page #content nav.woocommerce-pagination ul li, .woocommerce-page nav.woocommerce-pagination ul li {
+      border: none;
+      margin-left: 0.25em; }
+      .woocommerce #content nav.woocommerce-pagination ul li a, .woocommerce #content nav.woocommerce-pagination ul li span, .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span, .woocommerce-page #content nav.woocommerce-pagination ul li a, .woocommerce-page #content nav.woocommerce-pagination ul li span, .woocommerce-page nav.woocommerce-pagination ul li a, .woocommerce-page nav.woocommerce-pagination ul li span {
+        display: inline-block;
+        padding: 4px 8px;
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+        line-height: inherit; }
+        .woocommerce #content nav.woocommerce-pagination ul li a.current, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span:hover, .woocommerce nav.woocommerce-pagination ul li a.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li span:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a.current, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span:hover, .woocommerce-page nav.woocommerce-pagination ul li a.current, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span:hover {
+          color: white; }
+
+.woocommerce #payment, .woocommerce-page #payment {
+  border-radius: 0;
+  background: #f5f5f5; }
+  .woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
+    background: #e5e5e5;
+    border-radius: 0;
+    box-shadow: none; }
+    .woocommerce #payment div.payment_box p:first-child, .woocommerce-page #payment div.payment_box p:first-child {
+      margin-top: 0; }
+
+.woocommerce-checkout .form-row .chosen-container-single .chosen-single {
+  border-radius: 0; }
+
+.woocommerce ul.cart_list li .reviewer, .woocommerce ul.product_list_widget li .reviewer, .woocommerce-page ul.cart_list li .reviewer, .woocommerce-page ul.product_list_widget li .reviewer {
+  color: #999;
+  font-size: 10px; }
+.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a, .woocommerce-page ul.cart_list li a, .woocommerce-page ul.product_list_widget li a {
+  color: inherit; }
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img {
+  box-shadow: none;
+  float: right;
+  width: 65px;
+  margin-left: 15px; }
+.woocommerce ul.cart_list li .star-rating, .woocommerce ul.product_list_widget li .star-rating, .woocommerce-page ul.cart_list li .star-rating, .woocommerce-page ul.product_list_widget li .star-rating {
+  margin-top: 6px;
+  margin-bottom: 4px; }
+
+.wc-backward a:before, .wc-backward:before {
+  font-size: 1rem; }
+
+.woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward {
+  display: none; }
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register, .woocommerce-page form.checkout_coupon, .woocommerce-page form.login, .woocommerce-page form.register {
+  border-radius: 0; }
+
+.woocommerce-page .login #rememberme {
+  margin-right: 1em; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Product List
+ * -------------------------------------------------------------------------- */
+.woocommerce ul.products li.product:hover h3, .woocommerce-page ul.products li.product:hover h3 {
+  text-decoration: underline; }
+.woocommerce ul.products li.product:hover .wp-post-image, .woocommerce-page ul.products li.product:hover .wp-post-image {
+  opacity: 0.8; }
+.woocommerce ul.products li.product.sale h3, .woocommerce-page ul.products li.product.sale h3 {
+  padding-bottom: 0.5em; }
+.woocommerce ul.products li.product a img, .woocommerce ul.products li.product a:hover img, .woocommerce-page ul.products li.product a img, .woocommerce-page ul.products li.product a:hover img {
+  box-shadow: none;
+  -webkit-backface-visibility: hidden; }
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
+  font-size: 1.2em;
+  padding-bottom: 0.25em; }
+.woocommerce ul.products li.product .star-rating, .woocommerce-page ul.products li.product .star-rating {
+  float: left;
+  margin-top: 0.5em; }
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price {
+  font-size: 1.2em; }
+  .woocommerce ul.products li.product .price > *, .woocommerce-page ul.products li.product .price > * {
+    display: block; }
+  .woocommerce ul.products li.product .price .amount, .woocommerce-page ul.products li.product .price .amount {
+    /* :first-letter does not work on inline elements */ }
+    .woocommerce ul.products li.product .price .amount:first-letter, .woocommerce-page ul.products li.product .price .amount:first-letter {
+      font-size: 0.8em; }
+  .woocommerce ul.products li.product .price ins, .woocommerce-page ul.products li.product .price ins {
+    text-decoration: none; }
+  .woocommerce ul.products li.product .price del span.amount, .woocommerce-page ul.products li.product .price del span.amount {
+    text-decoration: line-through; }
+.woocommerce ul.products li.product .button.add_to_cart_button, .woocommerce-page ul.products li.product .button.add_to_cart_button {
+  margin-top: 0.5em;
+  /*.btn-small*/
+  font-size: 10px;
+  padding: 6px 10px; }
+
+.woocommerce #content input.button.added:before, .woocommerce #respond input#submit.added:before, .woocommerce a.button.added:before, .woocommerce button.button.added:before, .woocommerce input.button.added:before, .woocommerce-page #content input.button.added:before, .woocommerce-page #respond input#submit.added:before, .woocommerce-page a.button.added:before, .woocommerce-page button.button.added:before, .woocommerce-page input.button.added:before {
+  position: static;
+  margin-left: 0.5em; }
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  width: 48.1% !important; }
+@media (min-width: 769px) {
+  .woocommerce.woocommerce-enable-shop-sidebar ul.products li.product, .woocommerce.woocommerce-enable-product-sidebar ul.products li.product, .woocommerce-page.woocommerce-enable-shop-sidebar ul.products li.product, .woocommerce-page.woocommerce-enable-product-sidebar ul.products li.product {
+    width: 30.8% !important; } }
+@media (min-width: 769px) {
+  .woocommerce.woocommerce-disable-shop-sidebar ul.products li.product, .woocommerce.woocommerce-disable-product-sidebar ul.products li.product, .woocommerce-page.woocommerce-disable-shop-sidebar ul.products li.product, .woocommerce-page.woocommerce-disable-product-sidebar ul.products li.product {
+    width: 22.05% !important; } }
+
+.woocommerce span.onsale, .woocommerce-page span.onsale {
+  text-transform: uppercase;
+  text-shadow: none;
+  box-shadow: none;
+  z-index: 1; }
+
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  background: #aaa;
+  color: #fff; }
+  .woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
+    background: #bbb; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Single Product
+ * -------------------------------------------------------------------------- */
+.woocommerce #content div.product div.images img, .woocommerce div.product div.images img, .woocommerce-page #content div.product div.images img, .woocommerce-page div.product div.images img {
+  box-shadow: none; }
+
+.woocommerce #content input.button.alt, .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt, .woocommerce a.button.alt:hover, .woocommerce button.button.alt, .woocommerce button.button.alt:hover, .woocommerce input.button.alt, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt, .woocommerce-page input.button.alt:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.12); }
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+  background: inherit; }
+
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page div.product .woocommerce-tabs ul.tabs li {
+  box-shadow: none;
+  border-radius: 0;
+  background: #3a3a3a; }
+  .woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+    color: #fff; }
+  .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active {
+    color: inherit; }
+
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li:after, .woocommerce #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:before {
+  display: none; }
+
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+  text-shadow: none; }
+
+.woocommerce #reviews #comments h2,
+.woocommerce #tab-description h2 {
+  display: none; }
+
+.woocommerce .related h2, .woocommerce .upsells.products h2, .woocommerce .cross-sells h2, .woocommerce .cart_totals h2, .woocommerce-page .related h2, .woocommerce-page .upsells.products h2, .woocommerce-page .cross-sells h2, .woocommerce-page .cart_totals h2 {
+  margin-bottom: 30px;
+  font-size: 1.563em; }
+.woocommerce div.product form.cart .single_variation, .woocommerce-page div.product form.cart .single_variation {
+  margin-bottom: 1em; }
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  margin-bottom: 0; }
+.woocommerce div.product .woocommerce-tabs .panel {
+  border: 1px solid #e0dadf;
+  padding: 15px;
+  margin-top: -1px; }
+  .woocommerce div.product .woocommerce-tabs .panel:before, .woocommerce div.product .woocommerce-tabs .panel:after {
+    content: " ";
+    display: table; }
+  .woocommerce div.product .woocommerce-tabs .panel:after {
+    clear: both; }
+.woocommerce div.product .woocommerce-tabs #reviews {
+  margin-top: 15px; }
+
+.woocommerce #reviews h3, .woocommerce-page #reviews h3 {
+  margin-bottom: 1em; }
+
+.woocommerce #review_form #respond p label, .woocommerce-page #review_form #respond p label {
+  margin-bottom: 0.5em;
+  display: block; }
+
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+  margin-bottom: 3.8%; }
+
+.woocommerce #content div.product form.cart .variations td.label, .woocommerce div.product form.cart .variations td.label, .woocommerce-page #content div.product form.cart .variations td.label, .woocommerce-page div.product form.cart .variations td.label {
+  padding-top: 0.5em; }
+
+.woocommerce #content div.product div.summary a, .woocommerce div.product div.summary a, .woocommerce-page #content div.product div.summary a, .woocommerce-page div.product div.summary a {
+  color: inherit; }
+.woocommerce #content div.product div.summary .vw-woo-categories-title,
+.woocommerce #content div.product div.summary .vw-woo-tags-title,
+.woocommerce #content div.product div.summary .vw-woo-sku-title, .woocommerce div.product div.summary .vw-woo-categories-title,
+.woocommerce div.product div.summary .vw-woo-tags-title,
+.woocommerce div.product div.summary .vw-woo-sku-title, .woocommerce-page #content div.product div.summary .vw-woo-categories-title,
+.woocommerce-page #content div.product div.summary .vw-woo-tags-title,
+.woocommerce-page #content div.product div.summary .vw-woo-sku-title, .woocommerce-page div.product div.summary .vw-woo-categories-title,
+.woocommerce-page div.product div.summary .vw-woo-tags-title,
+.woocommerce-page div.product div.summary .vw-woo-sku-title {
+  font-weight: bold; }
+.woocommerce #content div.product div.summary .price ins, .woocommerce div.product div.summary .price ins, .woocommerce-page #content div.product div.summary .price ins, .woocommerce-page div.product div.summary .price ins {
+  text-decoration: none; }
+
+.woocommerce div.product form.cart {
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid #E0DADF;
+  border-bottom: 1px solid #E0DADF; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Message
+ * -------------------------------------------------------------------------- */
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-info, .woocommerce-page .woocommerce-message {
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #eee;
+  margin-top: 1em !important; }
+
+.wc-forward a:after, .wc-forward:after {
+  font-size: 1em; }
+
+.woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce .woocommerce-message:before, .woocommerce-page .woocommerce-error:before, .woocommerce-page .woocommerce-info:before, .woocommerce-page .woocommerce-message:before {
+  height: auto;
+  width: 2em;
+  border-radius: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Cart
+ * -------------------------------------------------------------------------- */
+.woocommerce .cart_totals table {
+  width: 100%; }
+
+.woocommerce .cart-collaterals .cart_totals tr td, .woocommerce .cart-collaterals .cart_totals tr th, .woocommerce-page .cart-collaterals .cart_totals tr td, .woocommerce-page .cart-collaterals .cart_totals tr th {
+  width: 40%;
+  min-width: 40%; }
+
+.woocommerce .cart-collaterals .shipping_calculator h2, .woocommerce-page .cart-collaterals .shipping_calculator h2 {
+  font-size: 1.25rem; }
+  .woocommerce .cart-collaterals .shipping_calculator h2 a, .woocommerce-page .cart-collaterals .shipping_calculator h2 a {
+    color: #fff; }
+
+.woocommerce table.shop_table, .woocommerce-page table.shop_table {
+  border-radius: 0; }
+  .woocommerce table.shop_table td, .woocommerce-page table.shop_table td {
+    padding: 15px 12px; }
+  .woocommerce table.shop_table .wp-post-image, .woocommerce-page table.shop_table .wp-post-image {
+    margin: 0;
+    width: 64px; }
+  .woocommerce table.shop_table a.remove, .woocommerce-page table.shop_table a.remove {
+    color: #777; }
+    .woocommerce table.shop_table a.remove:hover, .woocommerce-page table.shop_table a.remove:hover {
+      background-color: #777;
+      color: #fff; }
+  @media (max-width: 767px) {
+    .woocommerce table.shop_table td, .woocommerce-page table.shop_table td {
+      padding: 15px 2px; }
+    .woocommerce table.shop_table td.actions input, .woocommerce-page table.shop_table td.actions input {
+      display: block !important;
+      width: 100% !important; }
+    .woocommerce table.shop_table td.actions .coupon, .woocommerce-page table.shop_table td.actions .coupon {
+      padding-bottom: 1em; }
+    .woocommerce table.shop_table td.actions input[type=submit], .woocommerce-page table.shop_table td.actions input[type=submit] {
+      margin-bottom: 1em; }
+    .woocommerce table.shop_table input.qty, .woocommerce table.shop_table .plus, .woocommerce table.shop_table .minus, .woocommerce-page table.shop_table input.qty, .woocommerce-page table.shop_table .plus, .woocommerce-page table.shop_table .minus {
+      float: none;
+      width: 60px;
+      margin: 0; } }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Filter By
+ * -------------------------------------------------------------------------- */
+.woocommerce .widget_layered_nav a, .woocommerce-page .widget_layered_nav a {
+  color: inherit; }
+.woocommerce .widget_layered_nav .count, .woocommerce-page .widget_layered_nav .count {
+  font-weight: bold; }
+.woocommerce .widget_layered_nav li + li, .woocommerce-page .widget_layered_nav li + li {
+  border-top: 1px solid #eee;
+  padding-top: 7px;
+  margin-top: 7px; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Filter Widget
+ * -------------------------------------------------------------------------- */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range {
+  background-image: none;
+  box-shadow: none; }
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  background: #fff;
+  border: 2px solid; }
+.woocommerce .widget_price_filter .ui-slider-horizontal, .woocommerce-page .widget_price_filter .ui-slider-horizontal {
+  height: 8px; }
+.woocommerce .widget_price_filter .price_slider, .woocommerce-page .widget_price_filter .price_slider {
+  margin-bottom: 30px; }
+.woocommerce .widget_price_filter .price_slider_amount .button, .woocommerce-page .widget_price_filter .price_slider_amount .button {
+  font-size: 1em; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Active Filters Widget
+ * -------------------------------------------------------------------------- */
+.widget.woocommerce.widget_layered_nav_filters li + li {
+  margin-right: 5px; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Product Categories Widget
+ * -------------------------------------------------------------------------- */
+.widget.woocommerce.widget_product_categories .product-categories {
+  list-style: inherit; }
+  .widget.woocommerce.widget_product_categories .product-categories a {
+    color: inherit; }
+  .widget.woocommerce.widget_product_categories .product-categories > .cat-item {
+    font-weight: bold; }
+    .widget.woocommerce.widget_product_categories .product-categories > .cat-item .cat-item {
+      font-weight: normal; }
+  .widget.woocommerce.widget_product_categories .product-categories > .cat-item + .cat-item {
+    margin-top: 10px; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Product Search Widget
+ * -------------------------------------------------------------------------- */
+.widget.widget_product_search #s {
+  padding-top: 5px;
+  padding-bottom: 8px; }
+.widget.widget_product_search .screen-reader-text {
+  display: none; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Product Tag Cloud Widget
+ * -------------------------------------------------------------------------- */
+.widget.widget_product_tag_cloud .tagcloud a {
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  color: inherit; }
+
+/* -----------------------------------------------------------------------------
+ * Woocommerce: Cart Widget
+ * -------------------------------------------------------------------------- */
+.woocommerce .widget_shopping_cart ul.product_list_widget li a, .woocommerce-page .widget_shopping_cart ul.product_list_widget li a {
+  display: block; }
+.woocommerce .widget_shopping_cart ul.product_list_widget li + li, .woocommerce-page .widget_shopping_cart ul.product_list_widget li + li {
+  border-top: 1px solid #ddd;
+  padding-top: 15px; }
+.woocommerce .widget_shopping_cart .widget_shopping_cart_content .total, .woocommerce-page .widget_shopping_cart .widget_shopping_cart_content .total {
+  font-size: 1.1em;
+  color: #444;
+  border-top: 1px solid #ddd;
+  margin-top: 0;
+  padding-top: 15px; }
+  .woocommerce .widget_shopping_cart .widget_shopping_cart_content .total strong, .woocommerce-page .widget_shopping_cart .widget_shopping_cart_content .total strong {
+    text-transform: uppercase; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress
+ * -------------------------------------------------------------------------- */
+#bbpress-forums .bbp-forum-title {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: inherit; }
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+  padding-left: 1em; }
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content, #bbpress-forums p.bbp-topic-meta {
+  font-style: italic; }
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content, #bbpress-forums .bbp-topic-title p.bbp-topic-meta {
+  opacity: 0.75; }
+
+li.bbp-forum-info, li.bbp-topic-title {
+  width: 63%; }
+
+#bbpress-forums li.bbp-forum-reply-count,
+#bbpress-forums li.bbp-topic-reply-count {
+  width: 15%; }
+
+#bbpress-forums .bbp-breadcrumb {
+  margin-bottom: 15px; }
+
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+  margin-bottom: 0;
+  border: none; }
+
+#bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
+  margin-bottom: 12px; }
+
+#bbpress-forums div.bbp-topic-author a.bbp-author-name, #bbpress-forums div.bbp-reply-author a.bbp-author-name {
+  font-weight: bold; }
+
+#bbpress-forums div.wp-editor-container {
+  border: 1px solid #999; }
+
+#bbpress-forums #subscription-toggle,
+#bbpress-forums #favorite-toggle {
+  float: left;
+  margin-top: 1em; }
+
+#bbpress-forums ul.bbp-replies #subscription-toggle,
+#bbpress-forums ul.bbp-replies #favorite-toggle {
+  margin-top: 0; }
+
+#bbpress-forums .bbp-topic-permalink {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: inherit; }
+
+#bbpress-forums .bbp-forum-freshness > a,
+#bbpress-forums .bbp-topic-freshness > a {
+  color: inherit; }
+
+.bbp-pagination-links a:hover, .bbp-pagination-links span.current {
+  background: #3a3a3a;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  opacity: 1; }
+
+.bbp-pagination-links a, .bbp-pagination-links span.current {
+  border: none; }
+
+.bbp-pagination-links a {
+  color: inherit;
+  font-weight: bold; }
+
+#bbpress-forums > #subscription-toggle {
+  margin-bottom: 1em; }
+
+div.bbp-template-notice, div.indicator-hint {
+  border-radius: 0;
+  padding: 0.3em 0.8em; }
+
+#bbpress-forums div.bbp-search-form {
+  margin-bottom: 1em;
+  background-color: #fafafa;
+  padding: 25px;
+  display: block;
+  float: none;
+  position: relative; }
+
+#bbpress-forums #bbp-search-form #bbp_search {
+  width: 100%;
+  line-height: 20px;
+  font-size: 1.15em; }
+#bbpress-forums #bbp-search-form #bbp_search_submit {
+  position: absolute;
+  top: 25px;
+  left: 25px; }
+  .lt-ie10 #bbpress-forums #bbp-search-form #bbp_search_submit {
+    border-bottom: none; }
+@media (max-width: 767px) {
+  #bbpress-forums #bbp-search-form {
+    /* override bbpress default styles */ }
+    #bbpress-forums #bbp-search-form #bbp_search_submit {
+      padding: 9px 15px 6px 15px; }
+    #bbpress-forums #bbp-search-form #bbp_search {
+      font-size: 1.15em;
+      padding: 6px 10px 7px 10px; } }
+
+#bbpress-forums div.bbp-topic-tags a {
+  color: inherit; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: Forum/Topic Listing
+ * -------------------------------------------------------------------------- */
+#bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header,
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer {
+  background-color: #f7f7f7;
+  border-top-color: #e5e5e5; }
+
+#bbpress-forums .bbp-topics div.odd, #bbpress-forums ul.odd {
+  background: inherit; }
+
+#bbpress-forums #subscription-toggle a,
+#bbpress-forums #favorite-toggle a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 2px 6px;
+  font-size: 11px;
+  color: inherit; }
+#bbpress-forums #subscription-toggle a:hover, #bbpress-forums #subscription-toggle .is-subscribed a, #bbpress-forums #subscription-toggle .is-favorite a,
+#bbpress-forums #favorite-toggle a:hover,
+#bbpress-forums #favorite-toggle .is-subscribed a,
+#bbpress-forums #favorite-toggle .is-favorite a {
+  background-color: #777;
+  border-color: #777;
+  color: white; }
+
+#bbpress-forums #subscription-toggle {
+  margin-right: 0.75em; }
+
+#bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
+  font-size: inherit;
+  border: none;
+  margin-bottom: 0; }
+
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+  border: none;
+  padding: 1.5em 1em; }
+  #bbpress-forums li.bbp-body ul.forum .bbp-forum-info:before, #bbpress-forums li.bbp-body ul.topic .bbp-forum-info:before {
+    content: "\e86b";
+    font-family: "entypo";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-left: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-right: .2em;
+    /* icon-entypo-popup */
+    color: #aaa; }
+
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
+  border-bottom: 1px solid #eee; }
+  #bbpress-forums li.bbp-body ul.forum.bbp-has-subforums:first-child, #bbpress-forums li.bbp-body ul.topic.bbp-has-subforums:first-child {
+    border-top: 1px solid #eee; }
+  #bbpress-forums li.bbp-body ul.forum .number, #bbpress-forums li.bbp-body ul.topic .number {
+    font-weight: bold; }
+
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer,
+.vwbb-forum-cat-head {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+
+.vwbb-forum-cat-section {
+  margin-bottom: 2em; }
+  .vwbb-forum-cat-section:last-child {
+    margin-bottom: 0; }
+
+.vwbb-forum-cat-head {
+  font-weight: bold;
+  background: #f5f5f5;
+  margin-top: 2em; }
+  .vwbb-forum-cat-head li {
+    padding: 10px 1em; }
+  .vwbb-forum-cat-head .bbp-forum-topic-count {
+    text-align: center;
+    width: 15%; }
+
+li.bbp-topic-title > .bbp-author-avatar, li.bbp-topic-title > .avatar {
+  float: right;
+  margin-left: 15px; }
+  li.bbp-topic-title > .bbp-author-avatar ~ *, li.bbp-topic-title > .avatar ~ * {
+    margin-right: 70px; }
+
+#bbpress-forums .forums.bbp-replies .vw-bbp-header {
+  margin-bottom: 1em; }
+  #bbpress-forums .forums.bbp-replies .vw-bbp-header:before, #bbpress-forums .forums.bbp-replies .vw-bbp-header:after {
+    content: " ";
+    display: table; }
+  #bbpress-forums .forums.bbp-replies .vw-bbp-header:after {
+    clear: both; }
+
+#bbpress-forums .topic .bbp-meta, #bbpress-forums .reply .bbp-meta {
+  font-size: 10px;
+  color: #999;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px; }
+  #bbpress-forums .topic .bbp-meta .bbp-reply-permalink, #bbpress-forums .topic .bbp-meta .bbp-admin-links, #bbpress-forums .reply .bbp-meta .bbp-reply-permalink, #bbpress-forums .reply .bbp-meta .bbp-admin-links {
+    float: left; }
+  #bbpress-forums .topic .bbp-meta .bbp-reply-permalink, #bbpress-forums .reply .bbp-meta .bbp-reply-permalink {
+    color: inherit; }
+  #bbpress-forums .topic .bbp-meta .bbp-admin-links, #bbpress-forums .reply .bbp-meta .bbp-admin-links {
+    margin-left: 1em; }
+
+#bbpress-forums #bbp-user-replies-created .bbp-admin-links {
+  float: none;
+  display: block; }
+
+@media (max-width: 479px) {
+  #bbpress-forums ul.forum-titles .bbp-forum-freshness,
+  #bbpress-forums ul.forum .bbp-forum-freshness,
+  #bbpress-forums li.bbp-header li.bbp-topic-freshness,
+  #bbpress-forums li.bbp-body li.bbp-topic-freshness,
+  #bbpress-forums li.bbp-header li.bbp-topic-voice-count, #bbpress-forums li.bbp-header li.bbp-topic-reply-count {
+    display: none; }
+
+  #bbpress-forums ul.forum-titles .bbp-forum-topic-count,
+  #bbpress-forums ul.forum .bbp-forum-topic-count,
+  #bbpress-forums ul.forum .bbp-forum-reply-count {
+    margin-top: 0 !important;
+    width: auto !important;
+    text-align: right;
+    padding-right: 0; }
+
+  li.bbp-topic-title {
+    width: auto; }
+
+  #bbpress-forums li.bbp-body li.bbp-topic-voice-count, #bbpress-forums li.bbp-body li.bbp-topic-reply-count {
+    width: 100% !important;
+    text-align: left; }
+
+  #bbpress-forums li.bbp-header li.bbp-topic-title {
+    width: 100% !important;
+    text-align: right; }
+
+  /* Single Topic Page*/
+  #bbpress-forums .bbp-body div.bbp-reply-author,
+  #bbpress-forums div.bbp-reply-author img.avatar {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; }
+
+  #bbpress-forums div.bbp-reply-author a.bbp-author-name {
+    margin-top: 15px !important; }
+
+  #bbpress-forums .topic .bbp-meta:before, #bbpress-forums .topic .bbp-meta:after, #bbpress-forums .reply .bbp-meta:before, #bbpress-forums .reply .bbp-meta:after {
+    content: " ";
+    display: table; }
+  #bbpress-forums .topic .bbp-meta:after, #bbpress-forums .reply .bbp-meta:after {
+    clear: both; }
+
+  #bbpress-forums .topic .bbp-meta .bbp-admin-links, #bbpress-forums .reply .bbp-meta .bbp-admin-links {
+    display: block;
+    float: none;
+    padding-top: 1em; } }
+#bbpress-forums > .bbp-pagination {
+  margin-top: 15px; }
+
+div.bbp-submit-wrapper {
+  float: none; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: User Profile
+ * -------------------------------------------------------------------------- */
+#bbpress-forums #bbp-your-profile fieldset.submit {
+  margin-top: 2em;
+  background: #f7f7f7;
+  border: none; }
+#bbpress-forums #bbp-your-profile fieldset input[type=radio] {
+  width: auto; }
+#bbpress-forums #bbp-your-profile fieldset + .entry-title {
+  margin-top: 2em; }
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a {
+  font-weight: bold;
+  opacity: 1; }
+
+#bbpress-forums #bbp-user-wrapper h2.entry-title {
+  font-size: 1.563em;
+  /* h3 */ }
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation li {
+  border-top: 1px solid #eee; }
+  #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a {
+    background: #f7f7f7; }
+  #bbpress-forums #bbp-single-user-details #bbp-user-navigation li:last-child {
+    border-bottom: 1px solid #eee; }
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a {
+  color: inherit; }
+
+#bbpress-forums .bbp-user-section .bbp-pagination {
+  float: none; }
+  #bbpress-forums .bbp-user-section .bbp-pagination:before, #bbpress-forums .bbp-user-section .bbp-pagination:after {
+    content: " ";
+    display: table; }
+  #bbpress-forums .bbp-user-section .bbp-pagination:after {
+    clear: both; }
+
+#bbpress-forums #subscription-toggle, #bbpress-forums #favorite-toggle {
+  margin-top: 0; }
+
+.bbp-row-actions #favorite-toggle span.is-favorite a,
+.bbp-row-actions #subscription-toggle span.is-subscribed a {
+  border-radius: 50%;
+  line-height: 1.5em;
+  display: inline-block;
+  text-align: center; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: Search
+ * -------------------------------------------------------------------------- */
+#bbpress-forums #bbp-search-results div.bbp-forum-content {
+  margin-right: 0; }
+#bbpress-forums #bbp-search-results .bbp-meta {
+  font-size: 10px;
+  color: #999; }
+#bbpress-forums #bbp-search-results .bbp-topic-permalink, #bbpress-forums #bbp-search-results .bbp-forum-permalink {
+  font-size: inherit;
+  font-weight: inherit; }
+#bbpress-forums #bbp-search-results .bbp-topic-title-meta {
+  font-style: italic; }
+  #bbpress-forums #bbp-search-results .bbp-topic-title-meta a {
+    color: inherit; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: Statistics Widget
+ * ------------------------------------------------------------------------- */
+.widget.widget_display_stats dl {
+  background-color: #f7f7f7;
+  padding: 25px; }
+.widget.widget_display_stats dt {
+  margin-bottom: 7px; }
+  .widget.widget_display_stats dt:before, .widget.widget_display_stats dt:after {
+    content: " ";
+    display: table; }
+  .widget.widget_display_stats dt:after {
+    clear: both; }
+  .widget.widget_display_stats dt:first-child ~ dt {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 7px;
+    margin-top: 7px; }
+.widget.widget_display_stats dd {
+  margin-top: -2em;
+  float: left; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: Login Widgets
+ * -------------------------------------------------------------------------- */
+.widget.bbp_widget_login .bbp-login-form .bbp-username label, .widget.bbp_widget_login .bbp-login-form .bbp-email label, .widget.bbp_widget_login .bbp-login-form .bbp-password label {
+  display: block; }
+.widget.bbp_widget_login .bbp-login-form .bbp-username input, .widget.bbp_widget_login .bbp-login-form .bbp-email input, .widget.bbp_widget_login .bbp-login-form .bbp-password input {
+  width: 100%; }
+.widget.bbp_widget_login .bbp-login-form fieldset, .widget.bbp_widget_login .bbp-logged-in {
+  background-color: #f7f7f7;
+  padding: 25px;
+  border: none; }
+.widget.bbp_widget_login .bbp-logged-in h4 {
+  margin-top: 0;
+  margin-bottom: 0; }
+.widget.bbp_widget_login .bbp-logged-in .logout-link {
+  font-size: 11px; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: Search Widget
+ * ------------------------------------------------------------------------- */
+.widget.widget_display_search form {
+  position: relative; }
+.widget.widget_display_search #bbp_search {
+  width: 100%;
+  padding-left: 100px; }
+.widget.widget_display_search #bbp_search_submit {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* -----------------------------------------------------------------------------
+ * bbPress: General Widgets
+ * -------------------------------------------------------------------------- */
+.widget.widget_display_views ul,
+.widget.widget_display_topics ul,
+.widget.widget_display_replies ul,
+.widget.widget_display_forums ul {
+  list-style: none;
+  padding-right: 0; }
+.widget.widget_display_views li + li,
+.widget.widget_display_topics li + li,
+.widget.widget_display_replies li + li,
+.widget.widget_display_forums li + li {
+  border-top: 1px solid #EEE;
+  padding-top: 7px;
+  margin-top: 7px; }
+.widget.widget_display_views a,
+.widget.widget_display_topics a,
+.widget.widget_display_replies a,
+.widget.widget_display_forums a {
+  color: inherit; }
+
+/* -----------------------------------------------------------------------------
+ * BuddyPress
+ * -------------------------------------------------------------------------- */
+body.buddypress.groups .vw-page-title .bp-title-button {
+  vertical-align: middle;
+  margin-right: 1.5em; }
+body.buddypress.groups div#item-header div#item-actions h3 {
+  font-size: 1.15rem;
+  font-weight: bold !important; }
+
+#buddypress ul.item-list li div.item-title a {
+  font-weight: bold; }
+
+#buddypress form#whats-new-form #whats-new-content textarea {
+  width: 100%; }
+
+#buddypress #whats-new-options {
+  overflow: hidden;
+  min-height: 50px; }
+
+#buddypress ul.item-list li div.item-title a:hover, #buddypress ul.item-list li h4:hover,
+#buddypress .activity-header a:hover, #buddypress .comment-meta a:hover, #buddypress .acomment-meta a:hover {
+  text-decoration: underline; }
+
+#buddypress div.item-list-tabs ul li.feed :before {
+  font-family: "entypo";
+  content: '\e853';
+  /* icon-entypo-rss */
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-left: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-right: .2em; }
+
+#buddypress div.item-list-tabs ul li a, #buddypress div.item-list-tabs ul li span {
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+  color: #777; }
+  #buddypress div.item-list-tabs ul li a span, #buddypress div.item-list-tabs ul li span span {
+    margin-left: 0;
+    border-radius: 0;
+    border: none; }
+  #buddypress div.item-list-tabs ul li a:hover, #buddypress div.item-list-tabs ul li span:hover {
+    text-decoration: underline; }
+
+#buddypress div.item-list-tabs {
+  margin-bottom: 1.5em; }
+
+#buddypress .activity-list .activity-content .activity-header, #buddypress .activity-list .activity-content .comment-header {
+  font-size: 0.85em; }
+
+#buddypress .activity-header a:first-child {
+  font-weight: bold; }
+
+#buddypress .activity-list .activity-content .activity-inner, #buddypress .activity-list .activity-content blockquote {
+  padding-right: 1.5em;
+  border-right: 3px solid #eee; }
+
+#buddypress .activity-list .activity-content .activity-header img.avatar {
+  margin: 0 0 0 10px !important; }
+
+#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button, #buddypress ul.item-list li div.item-title span {
+  transition: all 0.2s ease-out; }
+
+#buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=submit]:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover {
+  color: #fff; }
+
+#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button,
+#buddypress ul.item-list li div.item-title span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+#buddypress .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-list li.mini .activity-avatar img.FB_profile_pic {
+  margin-top: 0.5em; }
+
+#buddypress div.activity-comments ul li {
+  margin-top: 15px; }
+
+#buddypress div.activity-comments div.acomment-content {
+  margin-top: 1em; }
+
+#buddypress div.dir-search {
+  margin-top: 0; }
+
+#buddypress div.dir-search input[type=text] {
+  padding: 0px 3px 3px 3px; }
+
+#buddypress div.pagination .pagination-links .page-numbers.current {
+  font-weight: bold; }
+
+#buddypress #whats-new-form {
+  margin-bottom: 2em; }
+
+#buddypress form#whats-new-form textarea {
+  min-height: 3em; }
+
+#buddypress div#item-header div#item-header-content {
+  float: none; }
+
+#buddypress div#item-header img.avatar {
+  width: 100px; }
+
+/* -----------------------------------------------------------------------------
+ * BuddyPress: User Profile
+ * -------------------------------------------------------------------------- */
+#buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
+  opacity: 1;
+  color: #fff; }
+
+#buddypress div.item-list-tabs#subnav {
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+  margin-bottom: 2em; }
+  #buddypress div.item-list-tabs#subnav, #buddypress div.item-list-tabs#subnav a {
+    font-size: 0.85em; }
+
+#buddypress div#item-header #item-header-avatar img.avatar {
+  margin-left: 2em;
+  margin-bottom: 3em; }
+
+#buddypress div#item-header div#item-meta #latest-update a:last-child {
+  margin-right: 1em;
+  font-weight: bold; }
+
+/* -----------------------------------------------------------------------------
+ * BuddyPress: Widget - Members/Groups
+ * -------------------------------------------------------------------------- */
+.widget.buddypress.widget_bp_groups_widget,
+.widget.buddypress.widget_bp_core_members_widget {
+  position: relative; }
+  .widget.buddypress.widget_bp_groups_widget div.item-options,
+  .widget.buddypress.widget_bp_core_members_widget div.item-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.85em;
+    color: #eee; }
+    .widget.buddypress.widget_bp_groups_widget div.item-options a,
+    .widget.buddypress.widget_bp_core_members_widget div.item-options a {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 0.85rem;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      .widget.buddypress.widget_bp_groups_widget div.item-options a.selected,
+      .widget.buddypress.widget_bp_core_members_widget div.item-options a.selected {
+        color: #fff; }
+  .widget.buddypress.widget_bp_groups_widget .item-list,
+  .widget.buddypress.widget_bp_core_members_widget .item-list {
+    padding-right: 0px; }
+  .widget.buddypress.widget_bp_groups_widget .item-list li:before,
+  .widget.buddypress.widget_bp_core_members_widget .item-list li:before {
+    display: none !important; }
+  .widget.buddypress.widget_bp_groups_widget .item-list li,
+  .widget.buddypress.widget_bp_core_members_widget .item-list li {
+    clear: both; }
+  .widget.buddypress.widget_bp_groups_widget .item-list li + li,
+  .widget.buddypress.widget_bp_core_members_widget .item-list li + li {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee; }
+  .widget.buddypress.widget_bp_groups_widget ul.item-list img.avatar,
+  .widget.buddypress.widget_bp_core_members_widget ul.item-list img.avatar {
+    height: 40px;
+    width: 40px; }
+  .widget.buddypress.widget_bp_groups_widget .item-title,
+  .widget.buddypress.widget_bp_core_members_widget .item-title {
+    font-weight: bold; }
+
+/* -----------------------------------------------------------------------------
+ * BuddyPress: Widget - Login
+ * -------------------------------------------------------------------------- */
+.widget.buddypress.widget_bp_core_login_widget .bp-login-widget-user-links {
+  margin-right: 1em; }
+.widget.buddypress.widget_bp_core_login_widget #bp-login-widget-user-login, .widget.buddypress.widget_bp_core_login_widget #bp-login-widget-user-pass {
+  width: 100%; }
+.widget.buddypress.widget_bp_core_login_widget .logout {
+  font-size: 0.85em; }
+
+/* -----------------------------------------------------------------------------
+ * Theme
+ * -------------------------------------------------------------------------- */
+.vw-breaking-news-wrapper,
+body.single-post article.post,
+.vw-page-title-wrapper {
+  border-bottom: 1px solid #eeeeee; }
+
+.vwspc-section-title:after,
+.widget-title:after,
+.vw-post-box-layout-title:after,
+.vw-related-posts-title:after,
+.vw-post-comments-title:after,
+.woocommerce .related h2:after, .woocommerce .upsells.products h2:after, .woocommerce-page .related h2:after, .woocommerce-page .upsells.products h2:after,
+.woocommerce .cross-sells h2:after, .woocommerce .cart_totals h2:after {
+  background: url("images/line-pattern-1.png");
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 0.35em;
+  content: ''; }
+
+.vw-about-author-section .vw-author-socials a,
+.vw-page-title-box .vw-author-socials a:hover,
+.vw-page-title-wrapper.vw-has-background .vw-page-title,
+.vw-page-title-wrapper.vw-has-background .vw-page-description {
+  color: #fff; }
+
+button, input[type=button], input[type=submit], .btn,
+.woocommerce #content input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt {
+  color: #fff; }
+
+/* -----------------------------------------------------------------------------
+ * Retina Supports
+ * -------------------------------------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .vw-site-logo-2x {
+    display: inline; }
+
+  .vw-site-logo-2x + .vw-site-logo {
+    display: none; } }

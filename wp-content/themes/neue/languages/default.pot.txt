@@ -1,0 +1,934 @@
+# Copyright (C) 2014 envirra
+# This file is distributed under the GPL.
+msgid ""
+msgstr ""
+"Project-Id-Version: NEUE 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2014-06-14 16:42:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.5\n"
+
+#: inc/template-tags.php:196
+msgid "0"
+msgstr ""
+
+#: inc/template-tags.php:196
+msgid "1"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"The page you were looking for appears to have been moved, deleted or does "
+"not exist."
+msgstr ""
+
+#: bbpress/loop-forums.php:27 bbpress/loop-single-forum.php:53
+msgid "Topics"
+msgstr ""
+
+#: bbpress/loop-forums.php:27 bbpress/loop-single-topic.php:90
+#: bbpress/loop-topics.php:20
+msgid "Replies"
+msgstr ""
+
+#: bbpress/loop-forums.php:27 bbpress/loop-single-forum.php:54
+#: bbpress/loop-single-topic.php:90 bbpress/loop-topics.php:20
+msgid "Posts"
+msgstr ""
+
+#: bbpress/loop-forums.php:28 bbpress/loop-topics.php:21
+msgid "Freshness"
+msgstr ""
+
+#: bbpress/loop-single-reply.php:42
+msgid "in reply to: "
+msgstr ""
+
+#: bbpress/loop-single-topic.php:64
+msgid "Started by: %1$s"
+msgstr ""
+
+#: bbpress/loop-single-topic.php:72
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: bbpress/loop-single-topic.php:89 bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr ""
+
+#: bbpress/loop-topics.php:19 templates/page-title.php:87
+msgid "Topic"
+msgstr ""
+
+#: buddypress.php:18 page.php:24 page_full_width.php:28 single_classic.php:27
+#: single_classic_no_featured_image.php:25
+#: single_full_width_featured_image.php:23
+msgid "Pages:"
+msgstr ""
+
+#: comments.php:16
+msgid "No Comment"
+msgstr ""
+
+#: comments.php:16
+msgid "<span>1</span> Comment"
+msgstr ""
+
+#: comments.php:16
+msgid "<span>%</span> Comments"
+msgstr ""
+
+#: comments.php:43
+msgid "Name (required)"
+msgstr ""
+
+#: comments.php:44
+msgid "E-Mail (required)"
+msgstr ""
+
+#: comments.php:45
+msgid "Website"
+msgstr ""
+
+#: comments.php:51
+msgid "Leave a reply"
+msgstr ""
+
+#: comments.php:53
+msgid "Submit comment"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:30
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:23
+msgid "Sidebar Selector"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:127
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:69
+msgid "Allow Null"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:138
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:80
+msgid "Yes"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:139
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:81
+msgid "No"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:148
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:91
+msgid "Default Value"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v3.php:188
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:133
+msgid "Select a Sidebar"
+msgstr ""
+
+#: framework/acf-sidebar-selector/sidebar_selector-v4.php:24
+msgid "Choice"
+msgstr ""
+
+#: framework/breadcrumb.php:14
+msgid "YOU ARE HERE:"
+msgstr ""
+
+#: framework/breadcrumb.php:15
+msgid "<span class=\"vw-breadcrumb-separator\">&raquo;</span>"
+msgstr ""
+
+#: framework/breadcrumb.php:38 framework/breadcrumb.php:43
+msgid "Home"
+msgstr ""
+
+#: framework/breadcrumb.php:121 framework/breadcrumb.php:124
+#: framework/breadcrumb.php:127
+msgid "Archives for "
+msgstr ""
+
+#: framework/breadcrumb.php:131
+msgid "Archives by: "
+msgstr ""
+
+#: framework/breadcrumb.php:136
+msgid "Search results for \""
+msgstr ""
+
+#: framework/breadcrumb.php:140
+msgid "Page Not Found"
+msgstr ""
+
+#: framework/breadcrumb.php:223
+msgid "Split"
+msgstr ""
+
+#: framework/breadcrumb.php:226
+msgid "Merge"
+msgstr ""
+
+#: framework/breadcrumb.php:229 framework/breadcrumb.php:243
+#: framework/breadcrumb.php:263
+msgid "Edit"
+msgstr ""
+
+#: framework/instant-search/instant-search.php:51
+msgid "View all results &raquo;"
+msgstr ""
+
+#: framework/menu/mega-menu-edit.php:18
+msgid "Mega Menu Type"
+msgstr ""
+
+#: framework/menu/mega-menu-edit.php:20
+msgid "Classic Menu"
+msgstr ""
+
+#: framework/menu/mega-menu-edit.php:21
+msgid "Category Mega Menu"
+msgstr ""
+
+#: framework/menu/mega-menu-edit.php:22
+msgid "4 Columns Links Mega Menu"
+msgstr ""
+
+#: framework/post-likes/post-likes.php:13
+msgid "You already like this"
+msgstr ""
+
+#: framework/post-likes/post-likes.php:105
+msgid "I like this"
+msgstr ""
+
+#: framework/post-views/post-views.php:122
+msgid "Views"
+msgstr ""
+
+#: framework/post-views/post-views.php:134
+msgid "%s Views"
+msgstr ""
+
+#: framework/review/review.php:29
+msgid "Review Options"
+msgstr ""
+
+#: framework/review/review.php:33
+msgid "Enable Review"
+msgstr ""
+
+#: framework/review/review.php:38
+msgid "Position"
+msgstr ""
+
+#: framework/review/review.php:44
+msgid "Top"
+msgstr ""
+
+#: framework/review/review.php:45
+msgid "Top - Floating"
+msgstr ""
+
+#: framework/review/review.php:46
+msgid "Bottom"
+msgstr ""
+
+#: framework/review/review.php:47
+msgid "Custom (using shortcode)"
+msgstr ""
+
+#: framework/review/review.php:51
+msgid "Review Summary"
+msgstr ""
+
+#: framework/review/review.php:57
+msgid "Score Style"
+msgstr ""
+
+#: framework/review/review.php:63
+msgid "Star"
+msgstr ""
+
+#: framework/review/review.php:64
+msgid "Points"
+msgstr ""
+
+#: framework/review/review.php:65
+msgid "Percentage"
+msgstr ""
+
+#: framework/review/review.php:69
+msgid "Review Score"
+msgstr ""
+
+#: framework/simple-page-composer/simple-page-composer.php:64
+msgid "Add Section"
+msgstr ""
+
+#: framework/simple-page-composer/simple-page-composer.php:72
+msgid "Click <strong>Add Section</strong> button to add new section."
+msgstr ""
+
+#: framework/simple-page-composer/simple-page-composer.php:73
+msgid "Loading ..."
+msgstr ""
+
+#: framework/simple-page-composer/simple-page-composer.php:134
+#: inc/shortcodes.php:706
+msgid "All"
+msgstr ""
+
+#: framework/simple-page-composer/simple-page-composer.php:155
+#: inc/shortcodes.php:863
+msgid "None"
+msgstr ""
+
+#: framework/user-profile-fields.php:14
+msgid "Social Profiles"
+msgstr ""
+
+#: framework/user-profile-fields.php:21 inc/template-tags.php:107
+msgid "Twitter"
+msgstr ""
+
+#: framework/user-profile-fields.php:29 inc/template-tags.php:111
+msgid "Facebook"
+msgstr ""
+
+#: framework/user-profile-fields.php:37 inc/template-tags.php:115
+msgid "Google+"
+msgstr ""
+
+#: framework/user-profile-fields.php:45 inc/template-tags.php:119
+msgid "Pinterest"
+msgstr ""
+
+#: framework/user-profile-fields.php:53 inc/template-tags.php:123
+msgid "Tumblr"
+msgstr ""
+
+#: framework/user-profile-fields.php:61 inc/template-tags.php:127
+msgid "Instagram"
+msgstr ""
+
+#: framework/user-profile-fields.php:69 inc/template-tags.php:131
+msgid "500px"
+msgstr ""
+
+#: framework/user-profile-fields.php:77 inc/template-tags.php:135
+msgid "Dribbble"
+msgstr ""
+
+#: framework/user-profile-fields.php:85 inc/template-tags.php:139
+msgid "Flickr"
+msgstr ""
+
+#: framework/user-profile-fields.php:93
+msgid "Lnkedin"
+msgstr ""
+
+#: framework/user-profile-fields.php:101 inc/template-tags.php:147
+msgid "Skype"
+msgstr ""
+
+#: framework/user-profile-fields.php:109 inc/template-tags.php:151
+msgid "Youtube"
+msgstr ""
+
+#: framework/user-profile-fields.php:117 inc/template-tags.php:155
+msgid "Vimeo"
+msgstr ""
+
+#: framework/user-profile-fields.php:125 inc/template-tags.php:159
+msgid "Email"
+msgstr ""
+
+#: functions.php:267
+msgid "Page %s"
+msgstr ""
+
+#: inc/bbpress.php:22
+msgid "Tagged:"
+msgstr ""
+
+#: inc/shortcodes.php:627
+msgid "Primary"
+msgstr ""
+
+#: inc/shortcodes.php:628
+msgid "Black"
+msgstr ""
+
+#: inc/shortcodes.php:629
+msgid "Orange"
+msgstr ""
+
+#: inc/shortcodes.php:630
+msgid "Red"
+msgstr ""
+
+#: inc/shortcodes.php:631
+msgid "Yellow"
+msgstr ""
+
+#: inc/shortcodes.php:632
+msgid "Blue"
+msgstr ""
+
+#: inc/shortcodes.php:633
+msgid "Green"
+msgstr ""
+
+#: inc/shortcodes.php:634
+msgid "Purple"
+msgstr ""
+
+#: inc/shortcodes.php:635
+msgid "Pink"
+msgstr ""
+
+#: inc/shortcodes.php:643 inc/shortcodes.php:671 inc/shortcodes.php:821
+msgid "Title"
+msgstr ""
+
+#: inc/shortcodes.php:649
+msgid "Open"
+msgstr ""
+
+#: inc/shortcodes.php:650
+msgid "Open this toggle by default"
+msgstr ""
+
+#: inc/shortcodes.php:654 inc/shortcodes.php:718 inc/shortcodes.php:799
+msgid "False"
+msgstr ""
+
+#: inc/shortcodes.php:655 inc/shortcodes.php:719 inc/shortcodes.php:800
+msgid "True"
+msgstr ""
+
+#: inc/shortcodes.php:659 inc/shortcodes.php:827
+msgid "Content"
+msgstr ""
+
+#: inc/shortcodes.php:677
+msgid "Post Counts"
+msgstr ""
+
+#: inc/shortcodes.php:683
+msgid "Post Category"
+msgstr ""
+
+#: inc/shortcodes.php:689
+msgid "Exclude Categories"
+msgstr ""
+
+#: inc/shortcodes.php:695
+msgid "Post Tagged"
+msgstr ""
+
+#: inc/shortcodes.php:701
+msgid "Post Format"
+msgstr ""
+
+#: inc/shortcodes.php:702
+msgid "The format of post to be displayed"
+msgstr ""
+
+#: inc/shortcodes.php:707
+msgid "Video"
+msgstr ""
+
+#: inc/shortcodes.php:708
+msgid "Audio"
+msgstr ""
+
+#: inc/shortcodes.php:709
+msgid "Gallery"
+msgstr ""
+
+#: inc/shortcodes.php:713
+msgid "Only Featured Posts"
+msgstr ""
+
+#: inc/shortcodes.php:723
+msgid "Layout"
+msgstr ""
+
+#: inc/shortcodes.php:724
+msgid "The layout of posts"
+msgstr ""
+
+#: inc/shortcodes.php:744
+msgid "Order"
+msgstr ""
+
+#: inc/shortcodes.php:745
+msgid "The ordering of posts"
+msgstr ""
+
+#: inc/shortcodes.php:749
+msgid "Latest"
+msgstr ""
+
+#: inc/shortcodes.php:750
+msgid "Random"
+msgstr ""
+
+#: inc/shortcodes.php:751 widgets/widget-post-tabbed.php:38
+msgid "Popular"
+msgstr ""
+
+#: inc/shortcodes.php:752
+msgid "Most Viewed"
+msgstr ""
+
+#: inc/shortcodes.php:753
+msgid "Most Review Scores"
+msgstr ""
+
+#: inc/shortcodes.php:762
+msgid "Label"
+msgstr ""
+
+#: inc/shortcodes.php:769
+msgid "Style"
+msgstr ""
+
+#: inc/shortcodes.php:776
+msgid "Link to Url"
+msgstr ""
+
+#: inc/shortcodes.php:782
+msgid "Link Target"
+msgstr ""
+
+#: inc/shortcodes.php:783
+msgid "The location to open link, enter \"_blank\" for open the link in new window"
+msgstr ""
+
+#: inc/shortcodes.php:788
+msgid "Icon"
+msgstr ""
+
+#: inc/shortcodes.php:794
+msgid "Full Width"
+msgstr ""
+
+#: inc/shortcodes.php:795
+msgid "Expand button to fit the container"
+msgstr ""
+
+#: inc/shortcodes.php:809
+msgid "Character"
+msgstr ""
+
+#: inc/shortcodes.php:810
+msgid "The character to be a dropcap"
+msgstr ""
+
+#: inc/shortcodes.php:839 inc/shortcodes.php:851
+msgid "Text"
+msgstr ""
+
+#: inc/shortcodes.php:840
+msgid "the text to be marked"
+msgstr ""
+
+#: inc/shortcodes.php:858
+msgid "Align"
+msgstr ""
+
+#: inc/shortcodes.php:864
+msgid "Left"
+msgstr ""
+
+#: inc/shortcodes.php:865
+msgid "Right"
+msgstr ""
+
+#: inc/sidebars.php:18
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:20
+msgid "These are widgets for the Blog sidebar."
+msgstr ""
+
+#: inc/sidebars.php:31
+msgid "Page Sidebar"
+msgstr ""
+
+#: inc/sidebars.php:33
+msgid "These are widgets for the static page."
+msgstr ""
+
+#: inc/sidebars.php:44
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: inc/sidebars.php:46 inc/sidebars.php:55 inc/sidebars.php:64
+msgid "These are widgets for the Footer."
+msgstr ""
+
+#: inc/sidebars.php:53
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: inc/sidebars.php:62
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "&larr; Previous"
+msgstr ""
+
+#: inc/template-tags.php:34
+msgid "Next &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:40
+msgid "Page : "
+msgstr ""
+
+#: inc/template-tags.php:71
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/template-tags.php:143
+msgid "Linkedin"
+msgstr ""
+
+#: inc/template-tags.php:196
+msgid "%"
+msgstr ""
+
+#: inc/template-tags.php:368
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:370
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:370
+msgid "(Edit)"
+msgstr ""
+
+#: inc/template-tags.php:378
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:400
+msgid "View all posts in %s"
+msgstr ""
+
+#: inc/woocommerce.php:73 templates/page-title.php:39
+msgid "Shop"
+msgstr ""
+
+#: inc/woocommerce.php:162
+msgid "View your shopping cart"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search"
+msgstr ""
+
+#: single_classic.php:33 single_classic_no_featured_image.php:31
+#: single_full_width_featured_image.php:29
+msgid "Tags:"
+msgstr ""
+
+#: templates/breaking-news.php:13
+msgid "BREAKING &nbsp; /"
+msgstr ""
+
+#: templates/menu-mobile.php:8
+msgid "Navigation"
+msgstr ""
+
+#: templates/page-title.php:27
+msgid "Author Archive"
+msgstr ""
+
+#: templates/page-title.php:46
+msgid "Product"
+msgstr ""
+
+#: templates/page-title.php:50
+msgid "Products tagged"
+msgstr ""
+
+#: templates/page-title.php:61
+msgid "Products in"
+msgstr ""
+
+#: templates/page-title.php:71
+msgid "Member"
+msgstr ""
+
+#: templates/page-title.php:78
+msgid "Forum"
+msgstr ""
+
+#: templates/page-title.php:83
+msgid "User"
+msgstr ""
+
+#: templates/page-title.php:109
+msgid "All posts on"
+msgstr ""
+
+#: templates/page-title.php:114
+msgid "All posts tagged"
+msgstr ""
+
+#: templates/page-title.php:126
+msgid "All posts in"
+msgstr ""
+
+#: templates/page-title.php:136
+msgid "Search Result for &ldquo;%s&rdquo;"
+msgstr ""
+
+#: templates/page-title.php:140
+msgid "We Couldn't Find Your Page!"
+msgstr ""
+
+#: templates/page-title.php:144
+msgid "Blog"
+msgstr ""
+
+#: templates/page-title.php:149
+msgid "Archives"
+msgstr ""
+
+#: templates/portfolio/media.php:9
+msgid "Permalink to image of %s"
+msgstr ""
+
+#: templates/post-box/post-box-article.php:18
+#: templates/post-box/post-box-classic.php:15
+#: templates/post-box/post-box-large.php:18
+msgid "READ MORE &rarr;"
+msgstr ""
+
+#: templates/post-box/post-box-meta-small.php:8
+#: templates/post-box/post-box-meta-tiny.php:8
+#: templates/post-box/post-box-meta.php:14
+#: templates/post-box/post-box-small-comment.php:2
+#: templates/post-box/post-box-small-comment.php:7
+#: templates/post-box/post-layout-slider-medium.php:17
+#: templates/post-box/post-layout-slider.php:17 templates/post-meta.php:11
+#: widgets/widget-author-list.php:60
+msgid "Permalink to %s"
+msgstr ""
+
+#: templates/post-box/post-box-meta.php:6 templates/post-meta.php:6
+msgid "View all posts by"
+msgstr ""
+
+#: templates/post-box/post-box-meta.php:27 templates/post-meta.php:23
+msgid "Share on Facebook"
+msgstr ""
+
+#: templates/post-box/post-box-meta.php:28 templates/post-meta.php:24
+msgid "Share on Twitter"
+msgstr ""
+
+#: templates/post-box/post-box-meta.php:29 templates/post-meta.php:25
+msgid "Share on Google+"
+msgstr ""
+
+#: templates/post-box/post-box-meta.php:37 templates/post-meta.php:33
+msgid "Share on Pinterest"
+msgstr ""
+
+#: templates/post-navigation.php:10 templates/post-navigation.php:19
+msgid "Previous post"
+msgstr ""
+
+#: templates/post-navigation.php:21
+msgid "There is no more story."
+msgstr ""
+
+#: templates/post-navigation.php:33 templates/post-navigation.php:42
+msgid "Next post"
+msgstr ""
+
+#: templates/post-navigation.php:44
+msgid "This is the most recent story."
+msgstr ""
+
+#: templates/post-review.php:10
+msgid "Editor's Rating"
+msgstr ""
+
+#: templates/related-posts.php:2
+msgid "Related Posts"
+msgstr ""
+
+#: widgets/widget-feedburner.php:44
+msgid "Subscribe to our email newsletter."
+msgstr ""
+
+#: widgets/widget-feedburner.php:46
+msgid "Enter your e-mail address"
+msgstr ""
+
+#: widgets/widget-feedburner.php:49
+msgid "Subscribe"
+msgstr ""
+
+#: widgets/widget-login.php:44
+msgid "Welcome"
+msgstr ""
+
+#: widgets/widget-login.php:46
+msgid "Dashboard"
+msgstr ""
+
+#: widgets/widget-login.php:47
+msgid "Your Profile"
+msgstr ""
+
+#: widgets/widget-login.php:48
+msgid "Logout"
+msgstr ""
+
+#: widgets/widget-login.php:55
+msgid "Username"
+msgstr ""
+
+#: widgets/widget-login.php:56
+msgid "Password"
+msgstr ""
+
+#: widgets/widget-login.php:58
+msgid "Remember Me"
+msgstr ""
+
+#: widgets/widget-login.php:59
+msgid "Lost your password?"
+msgstr ""
+
+#: widgets/widget-login.php:61
+msgid "Log in"
+msgstr ""
+
+#: widgets/widget-login.php:63
+msgid "Register"
+msgstr ""
+
+#: widgets/widget-post-tabbed.php:39
+msgid "Recent"
+msgstr ""
+
+#: widgets/widget-post-tabbed.php:40
+msgid "Comments"
+msgstr ""
+
+#: widgets/widget-social-counter.php:60
+msgid "Follow our twitter"
+msgstr ""
+
+#: widgets/widget-social-counter.php:63
+msgid "Followers"
+msgstr ""
+
+#: widgets/widget-social-counter.php:74
+msgid "Like our facebook"
+msgstr ""
+
+#: widgets/widget-social-counter.php:77
+msgid "Fans"
+msgstr ""
+
+#: widgets/widget-social-counter.php:88
+msgid "Subscribe our youtube"
+msgstr ""
+
+#: widgets/widget-social-counter.php:91
+msgid "Subscribers"
+msgstr ""
+
+#: widgets/widget-social-counter.php:102
+msgid "+1 our page"
+msgstr ""
+
+#: widgets/widget-social-counter.php:105
+msgid "People"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:23
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:23
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:27
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:29
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:38
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:41
+msgid "You may also like&hellip;"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "NEUE"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://envirra.com/themes/neue"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Magazine WordPress Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "envirra"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://envirra.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "VW Simple Page Composer"
+msgstr ""
+
+#: framework/functions.php:144
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: framework/functions.php:147
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
